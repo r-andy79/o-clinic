@@ -11,6 +11,7 @@
 --second-colour: #CBA8B1;
 --third-colour: #832C25;
 --fourth-colour: #CF7E78;
+--aqua-colour: #B8E0DF;
 --dark-colour: #070D1F;
 --grey-colour: #8A817C;
 --white-colour: #fefefe;
@@ -286,6 +287,18 @@ img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.link__dentist {
+  text-decoration: none;
+  background: var(--aqua-colour);
+  color: var(--white-colour);
+}
+
+.link__cosmetology {
+  text-decoration: none;
+  background: var(--second-colour);
+  color: var(--white-colour);
+}
+
 .about__image {
   width: 100%;
   padding-bottom: 1 rem 1rem 3rem 1rem;
@@ -390,6 +403,7 @@ img {
 .person__description {
   font-size: 13px;
   padding: .5rem 0;
+  line-height: 1.4;
   font-family: 'Noto serif', serif;
 }
 
@@ -451,6 +465,46 @@ img {
 
 .article:nth-child(even)::before {
   right: 20%;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  grid-column: 1 / 4;
+}
+
+.footer__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 0;
+}
+
+.footer__header {
+  text-align: center;
+}
+
+.clinic__name {
+  color: var(--third-colour);
+  margin-bottom: 1rem;
+}
+
+.contact__details {
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact {
+  font-family: 'Noto serif', serif;
+}
+
+.logo__container {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ====== PRICE LIST ====== */
