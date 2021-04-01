@@ -264,7 +264,7 @@ img {
 }
 
 /* ====== ABOUT ====== */
-.about__section {
+.section {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -390,9 +390,68 @@ img {
 .person__description {
   font-size: 13px;
   padding: .5rem 0;
+  font-family: 'Noto serif', serif;
 }
 
+/* ====== FEATURES ====== */
 
+.features {
+  grid-column: 1 / 4;
+}
+
+.features__header {
+  text-align: center;
+}
+
+.features__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, max-content);
+  grid-gap: 2rem 4rem;
+}
+
+.article {
+  position: relative;
+}
+
+.article__header {
+  font-family: 'Noto serif', serif;
+  color: var(--third-colour);
+  padding: 2rem 0;
+}
+
+.article__paragraph {
+  font-family: 'Noto serif', serif;
+  line-height: 1.5;
+  color: var(--grey-colour);
+  font-size: var(--normal-font-size);
+}
+
+.article:nth-child(odd) {
+  grid-column: 1 / 4;
+}
+
+.article:nth-child(even) {
+  grid-column: 1 / 4;
+}
+
+.article::before {
+  top: 0;
+  z-index: 1;
+  font-weight: bold;
+  position: absolute;
+  font-size: 160px;
+  color: var(--second-colour);
+  opacity: 0.5;
+}
+
+.article:nth-child(odd)::before {
+  left: 20%;
+}
+
+.article:nth-child(even)::before {
+  right: 20%;
+}
 
 /* ====== PRICE LIST ====== */
 
