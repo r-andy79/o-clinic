@@ -498,6 +498,7 @@ img {
 
 .contact {
   font-family: 'Noto serif', serif;
+  color: var(--grey-colour);
 }
 
 .logo__container {
