@@ -17,7 +17,7 @@
 --white-colour: #fefefe;
 
 /* ===== TYPOGRAPHY ===== */
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Noto Serif', serif;
   --headers-font: 'Noto Serif', serif; 
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -565,7 +565,123 @@ img {
 }
 
 /* ====== THERAPY ARTICLE ====== */
+.therapy__container {
+  background: var(--first-colour);
+  display: flex;
+  justify-content: center;
+}
 
+.therapy {
+  margin: 3rem 0;
+  width: 80%;
+  background: var(--white-colour);
+  padding: 3rem;
+}
+
+.article__header {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.sub__header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.dermapen__device {
+  margin: 4rem auto;
+  display: block;
+}
 .list__item--container {
   display: flex;
+  align-items: center;
+}
+
+.therapy__content {
+  margin: 4rem 0;
+  line-height: 1.5;
+}
+
+.therapy__link {
+  text-decoration: none;
+  color: var(--grey-colour);
+  font-size: 1.5rem;
+}
+
+.therapy__icon {
+  font-size: 32px;
+  margin-right: 1rem;
+}
+
+.list__item--container {
+  margin: 2rem 1rem;
+}
+
+.list__item--lead {
+  color: var(--third-colour);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.list__item--sub-lead {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--third-colour);
+  margin: 4rem 0;
+}
+
+.inner__logo {
+  width: 100px;
+}
+
+.therapy__pros,
+.effects,
+.advantages,
+.indications__list,
+.contraindications__list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  /* padding-left: 3rem; */
+}
+
+.indications,
+.contraindications {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.indication__icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.highlight {
+  color:var(--third-colour);
+  font-weight: bold;
+}
+
+.dermapen__timeline {
+  margin: 4rem auto;
+  display: block;
+}
+
+.description__paragraph {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.therapy__process {
+  margin: 4rem auto;
+  display: block;
+}
+
+.indication__text,
+.contraindication__text {
+
 }
