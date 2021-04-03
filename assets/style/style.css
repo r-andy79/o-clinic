@@ -429,7 +429,7 @@ img {
   position: relative;
 }
 
-.article__header {
+.article__inner--header {
   font-family: 'Noto serif', serif;
   color: var(--third-colour);
   padding: 2rem 0;
@@ -579,6 +579,8 @@ img {
 }
 
 .article__header {
+  font-family: 'Noto serif', serif;
+  color: var(--third-colour);
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -642,7 +644,8 @@ img {
 .effects,
 .advantages,
 .indications__list,
-.contraindications__list {
+.contraindications__list,
+.recommendations__list {
   list-style-type: disc;
   padding-left: 2rem;
   line-height: 1.5;
@@ -681,7 +684,9 @@ img {
   display: block;
 }
 
-.indication__text,
-.contraindication__text {
-
+.therapy__inner--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin: 4rem 0;
 }
