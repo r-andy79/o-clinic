@@ -591,7 +591,7 @@ img {
   text-transform: uppercase;
 }
 
-.dermapen__device {
+.device {
   margin: 4rem auto;
   display: block;
 }
@@ -617,7 +617,7 @@ img {
 }
 
 .list__item--container {
-  margin: 2rem 1rem;
+  margin: 2rem 0;
 }
 
 .list__item--lead {
@@ -689,4 +689,16 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin: 4rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .therapy__inner--container {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  iframe {
+    width: 300px;
+    height: 168px;
+  }
 }
