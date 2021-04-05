@@ -31,6 +31,12 @@
 
 // navLink.forEach(n => n.addEventListener('click', linkAction));
 
+const hamburger = document.querySelector('.hamburger');
+console.log(hamburger);
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('close');
+})
+
 // ACCORDION
 
 const accordionTitles = document.querySelectorAll('.accordion__title');
