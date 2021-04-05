@@ -157,6 +157,7 @@ header {
   border-bottom: .15em solid currentColor;
   transform: rotate(-45deg);
   margin-top: -.25em;
+  margin-left: .25em;
   transition: transform .1s ease-in-out;
 }
 
