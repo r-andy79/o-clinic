@@ -13,29 +13,37 @@
 </head>
 
 <body>
-    <!-- <header class="header">
-    <a href="#" class="header__logo"><img src="img/O_clinic_logo_ok2_cut.png" alt=""></a>
-    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-    <nav class="nav" id="nav-menu">
-      <div class="nav__content bd-grid">
-        <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="nav__social">
-          <a href="#" class="nav__social-icon">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header> -->
+    <header>
+        <nav class="navbar">
+            <div class="branding">
+                <a href="#" class="branding-logo"><img class="inner__logo" src="../img/logo-small.png" alt=""></a>
+            </div>
+            <label for="input-hamburger" class="hamburger"></label>
+            <input type="checkbox" id="input-hamburger" hidden>
+            <ul class="menu">
+                <li><a href="#" class="menu__link">Home</a></li>
+                <li class="has__dropdown"><a href="#" class="menu__link">Stomatologia
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="stomatologia/cennik-stomatologia.html" class="menu__link">Cennik</a></li>
+                        <li><a href="#" class="menu__link">link-2</a></li>
+                        <li><a href="#" class="menu__link">link-3</a></li>
+                    </ul>
+                </li>
+                <li class="has__dropdown"><a href="#" class="menu__link">Medycyna Estetyczna<span
+                            class="arrow"></span></a>
+                    <ul class="submenu">
+                        <li><a href="#" class="menu__link">link-1</a></li>
+                        <li><a href="#" class="menu__link">link-2</a></li>
+                        <li><a href="#" class="menu__link">link-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about" class="menu__link">O nas</a></li>
+                <li><a href="#contact" class="menu__link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="therapy__container">
         <section class="therapy">
             <article class="therapy__article dermapen">
@@ -43,8 +51,7 @@
                     <h2 class="article__header">Vital Injector2<sup>TM</sup></h2>
                     <h3 class="sub__header">Rewolucja mezoterapii igłowej</h3>
                 </div>
-                <img class="device" src="../img/medycyna-estetyczna/vital-injector/vital-injector-2-perla.png"
-                    alt="">
+                <img class="device" src="../img/medycyna-estetyczna/vital-injector/vital-injector-2-perla.png" alt="">
                 <ul class="therapy__content">
                     <li class="therapy__item"><a href="#about-therapy" class="therapy__link">Na czym polega zabieg?</a>
                     </li>
@@ -71,19 +78,27 @@
                 <div class="therapy__inner--container">
                     <img class="vital__injector--device" src="../img/medycyna-estetyczna/vital-injector/vital_filtr.jpg"
                         alt="urządzenie Vital Injector 2">
-                <div class="helper">
-                    <p class="description__paragraph inner__container--paragraph">
-                        To jedyne tak zaawansowane technologicznie urządzenie na rynku do próżniowego wieloigłowego
-                        podawania preparatów.
-                    </p>
-                    <p class="description__paragraph inner__container--paragraph">Wyjątkowo precyzyjny, bezpieczny i najszybszy znacznie przewyższa
-                        skutecznością i komfortem jakiekolwiek dotychczasowe urządzenia i metody w obrębie twarzy, skóry
-                        głowy, szyi, dekoltu, dłoni czy brzucha, pośladków (cellulit, tkanka tłuszczowa).</p>
+                    <div class="helper">
+                        <p class="description__paragraph inner__container--paragraph">
+                            To jedyne tak zaawansowane technologicznie urządzenie na rynku do próżniowego wieloigłowego
+                            podawania preparatów.
+                        </p>
+                        <p class="description__paragraph inner__container--paragraph">Wyjątkowo precyzyjny, bezpieczny i
+                            najszybszy znacznie przewyższa
+                            skutecznością i komfortem jakiekolwiek dotychczasowe urządzenia i metody w obrębie twarzy,
+                            skóry
+                            głowy, szyi, dekoltu, dłoni czy brzucha, pośladków (cellulit, tkanka tłuszczowa).</p>
                     </div>
                 </div>
                 <div class="therapy__inner--container">
-                    <iframe width="500" height="281" src="https://www.youtube.com/embed/dA8xJn7HvRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="500" height="281" src="https://www.youtube.com/embed/jxIxaLVVceg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/dA8xJn7HvRM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <iframe width="500" height="281" src="https://www.youtube.com/embed/jxIxaLVVceg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
                 <ul class="therapy__pros">
                     <li class="pros">Jeszcze większy komfort dla pacjenta</li>

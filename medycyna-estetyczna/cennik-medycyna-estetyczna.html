@@ -13,29 +13,36 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-    <a href="#" class="header__logo"><img src="img/O_clinic_logo_ok2_cut.png" alt=""></a>
-    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-    <nav class="nav" id="nav-menu">
-      <div class="nav__content bd-grid">
-        <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="nav__social">
-          <a href="#" class="nav__social-icon">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="branding">
+        <a href="#" class="branding-logo"><img class="inner__logo" src="../img/logo-small.png" alt=""></a>
       </div>
+      <label for="input-hamburger" class="hamburger"></label>
+      <input type="checkbox" id="input-hamburger" hidden>
+      <ul class="menu">
+        <li><a href="#" class="menu__link">Home</a></li>
+        <li class="has__dropdown"><a href="#" class="menu__link">Stomatologia
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="stomatologia/cennik-stomatologia.html" class="menu__link">Cennik</a></li>
+            <li><a href="#" class="menu__link">link-2</a></li>
+            <li><a href="#" class="menu__link">link-3</a></li>
+          </ul>
+        </li>
+        <li class="has__dropdown"><a href="#" class="menu__link">Medycyna Estetyczna<span class="arrow"></span></a>
+        <ul class="submenu">
+          <li><a href="#" class="menu__link">link-1</a></li>
+          <li><a href="#" class="menu__link">link-2</a></li>
+          <li><a href="#" class="menu__link">link-3</a></li>
+        </ul>
+        </li>
+        <li><a href="#about" class="menu__link">O nas</a></li>
+        <li><a href="#contact" class="menu__link">Kontakt</a></li>
+      </ul>
     </nav>
-  </header> -->
+  </header>
   <div class="container">
     <h1>Cennik Medycyna Estetyczna i Kosmetologia</h1>
     <section class="price__list">
@@ -369,11 +376,207 @@
         <div class="accordion__item">
           <h3 class="accordion__title">DERMAPEN</h3>
           <div class="accordion__answer">
-            <div class="treatment__name">
-              <p><strong>Mikronakłuwanie Dermapen 4.0 <br>połączone z koktajlem nawilżającym<br> z witaminami, osoczem bogatopłytkowym lub <br>z peelingem TCA</strong></p>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>Mikronakłuwanie Dermapen 4.0 <br>połączone z koktajlem nawilżającym<br> z witaminami, osoczem
+                    bogatopłytkowym lub <br>z peelingem TCA</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 3 zabiegów</strong></p>
+              </div>
             </div>
-            <div class="treatment__price"><p><strong>Cena</strong></p></div>
-            <div class="treatment__price"><p><strong>Pakiet 3 zabiegów</strong></p></div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>1 obszar (Twarz / Szyja / Dekolt)</p>
+              </div>
+              <div class="treatment__price">
+                <p>650zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>1800zł (600zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>2 obszary</p>
+              </div>
+              <div class="treatment__price">
+                <p>800zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>2100zł (700zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>3 obszary</p>
+              </div>
+              <div class="treatment__price">
+                <p>1000zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>2400zł (800zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+              <p><strong>Osocze bogatopłytkowe <br>podane w bezbolesnej mezoterapii <br>igłowej Vital Injector</strong></p>
+            </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>1 ampułka</p>
+              </div>
+              <div class="treatment__price">
+                <p>700zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>1650zł (550zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>2 ampułki</p>
+              </div>
+              <div class="treatment__price">
+                <p>900zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>2100zł (700zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>Osocze bogatopłytkowe <br>wysokoskoncentrowane otrzymywane <br>przy pomocy zestawu Dr. PRP</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>1 obszar (Twarz / Szyja / Dekolt)</p>
+              </div>
+              <div class="treatment__price">
+                <p>900zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>2100zł (700zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>2 obszary</p>
+              </div>
+              <div class="treatment__price">
+                <p>1500zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>3600zł (1200zł za zabieg)</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p>3 obszary</p>
+              </div>
+              <div class="treatment__price">
+                <p>1800zł</p>
+              </div>
+              <div class="treatment__price">
+                <p>4500zł (1500zł za zabieg)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__title">
+            KARBOKSYTERAPIA (REOLOGY 2)
+          </h3>
+          <div class="accordion__answer">
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>TWARZ I GŁOWA</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>RAMIONA</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>GRZBIETY RĄK</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>BRZUCH / UDA /<br> ŁYDKI / POŚLADKI</strong><br> (1 OKOLICA)</p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>CAŁE NOGI + POŚLADKI</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="treatment__name">
+                <p><strong>NOGI + POŚLADKI + BRZUCH</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Cena</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 5 zabiegów</strong></p>
+              </div>
+              <div class="treatment__price">
+                <p><strong>Pakiet 10 zabiegów</strong></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
