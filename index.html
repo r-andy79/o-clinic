@@ -14,10 +14,10 @@
 
 <body>
   <header>
+    <div class="branding">
+      <a href="#" class="branding-logo"><img class="header__logo" src="img/o-clinic-logo.png" alt=""></a>
+    </div>
     <nav class="navbar">
-      <div class="branding">
-        <a href="#" class="branding-logo"><img class="inner__logo" src="img/logo-small.png" alt=""></a>
-      </div>
       <label for="input-hamburger" class="hamburger"></label>
       <input type="checkbox" id="input-hamburger" hidden>
       <ul class="menu">
@@ -27,815 +27,82 @@
           </a>
           <ul class="submenu">
             <li><a href="stomatologia/cennik-stomatologia.html" class="menu__link">Cennik</a></li>
-            <li><a href="#" class="menu__link">link-2</a></li>
-            <li><a href="#" class="menu__link">link-3</a></li>
           </ul>
         </li>
         <li class="has__dropdown"><a href="#" class="menu__link">Medycyna Estetyczna<span class="arrow"></span></a>
-        <ul class="submenu">
-          <li><a href="#" class="menu__link">link-1</a></li>
-          <li><a href="#" class="menu__link">link-2</a></li>
-          <li><a href="#" class="menu__link">link-3</a></li>
-        </ul>
+          <ul class="submenu">
+            <li><a href="medycyna-estetyczna/dermapen.html" class="menu__link">Dermapen 4<sup>TM</sup></a></li>
+            <li><a href="medycyna-estetyczna/vital-injector.html" class="menu__link">Vital Injector</a></li>
+            <li><a href="medycyna-estetyczna/karboksyterapia.html" class="menu__link">Karboksyterapia</a></li>
+            <li><a href="medycyna-estetyczna/nici-liftingujace.html" class="menu__link">Nici liftingujące</a></li>
+            <li><a href="medycyna-estetyczna/cennik-medycyna-estetyczna.html" class="menu__link">Cennik</a></li>
+          </ul>
+        </li>
+        <li class="has__dropdown"><a href="#" class="menu__link">Kosmetologia<span class="arrow"></span></a>
+          <ul class="submenu">
+            <li><a href="#" class="menu__link">link-1</a></li>
+          </ul>
         </li>
         <li><a href="#about" class="menu__link">O nas</a></li>
         <li><a href="#contact" class="menu__link">Kontakt</a></li>
       </ul>
     </nav>
   </header>
-  <!-- <header class="header">
-    <a href="#" class="header__logo"><img src="img/O_clinic_logo_ok2_cut.png" alt=""></a>
-    <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
-    <nav class="nav" id="nav-menu">
-      <div class="nav__content bd-grid">
-        <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 1</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 2</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 3</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="nav__social">
-          <a href="#" class="nav__social-icon">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </header> -->
-  <div class="container">
-    <section class="section">
-      <div class="about__container" id="about">
-        <img class="about__image image-1" src="img/o-clinic-outside.jpg" alt="">
-        <div class="about__text text-1">
-          <h2 class="about__header section__header">O nas</h2>
-          <p class="about__paragraph">Jesteśmy gabinetem <a href="#" class="link__dentist">stomatologicznym</a> oraz <a
-              href="#" class="link__cosmetology">medycyny estetycznej</a> zlokalizowanym w
-            Sierpcu.
-            Nasza praktyka to świetnie wyposażone gabinety, umożliwiające wykorzystanie najnowszych metod leczenia, ale
-            także komfortowe wnętrza.</p>
-        </div>
-        <img class="about__image image-2" src="img/dentist-1.jpg" alt="">
-        <div class="about__text text-2">
-          <p class="about__paragraph">Nasz zespół to osoby z odpowiednio wysoką wiedzą medyczną , odpowiedzialne,
-            nieustannie się szkolące i podnoszące swoje kwalifikacje zawodowe a przede wszystkim przyjaźni i serdeczni
-            ludzie którzy służą pomocą i swoim doświadczeniem.</p>
-        </div>
-        <img src="img/20210227-DSC02055-2.jpg" alt="" class="about__image image-3">
-        <div class="about__text text-3">
-          <p class="about__paragraph">
-            Dążymy do tego aby nasi pacjenci odczuwali komfort, wygodę i czuli się bezpiecznie w naszym gabinecie.
-            Przywracamy naszym pacjentom zdrowe, piękne uśmiechy oraz walczymy z nieuchronnie postępującymi oznakami
-            starzenia. Taka synergia w działaniu daje niejednokrotnie znakomite rezultaty a pacjenci odzyskują pewność
-            siebie i zatracają kompleksy.
-            Bardzo gorąco zachęcamy do zapoznania się z ofertą gabinetu i zapraszamy na konsultacje.
-          </p>
-        </div>
-        <div class="people">
-          <h2 class="section__header people__header">Nasz personel</h2>
-          <div class="people__container">
-            <div class="card">
-              <article class="person">
-                <img src="img/perfil.png" alt="" class="person__photo">
-                <div>
-                  <header class="person__header">
-                    <h4 class="person__name">Grzegorz Obuchowicz</h4>
-                    <span class="person__position">Lekarz medycyny estetycznej, lekarz stomatolog</span>
-                  </header>
-                  <p class="person__description">
-                    Współzałożyciel O CLINIC. Absolwent wydziału lekarskiego, lekarsko-dentystycznego, oraz kierunku
-                    medycyna estetyczna Warszawskiego Uniwersytetu Medycznego.</p>
-                  <p class="person__description">
-                    Od wielu lat zajmuje się zabiegami
-                    estetycznymi w stomatologii. Wykonuje zabiegi z zakresu stomatologii zachowawczej, chirurgii,
-                    protetyki oraz endodoncji. Od lat pasjonat sztuki i piękna i stąd też zainteresowanie medycyną
-                    estetyczną.
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="card">
-              <article class="person">
-                <img src="img/perfil.png" alt="" class="person__photo">
-                <div>
-                  <header class="person__header">
-                    <h4 class="person__name">Justyna Obuchowicz</h4>
-                    <span class="person__position">Lekarz medycyny estetycznej, lekarz stomatolog</span>
-                  </header>
-                  <p class="person__description">
-                    Współzałożycielka O CLINIC. Absolwentka wydziału lekarsko-dentystycznego Warszawskiego Uniwersytetu
-                    Medycznego oraz szkoły podyplomowej Master in Orthodontics. Od wielu lat zajmuje się stomatologia
-                    zachowawczą i ortodoncją.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="features">
-          <h2 class="section__header features__header">Dlaczego warto zadbać o uśmiech i zdrowy wygląd?</h2>
-          <div class="features__container">
-            <div class="article">
-              <h3 class="article__inner--header">1. Zdrowie</h3>
-              <p class="article__paragraph">Zaniedbane zęby to nie tylko ból i feler estetyczny. To również większe
-                ryzyko miażdżycy, udaru mózgu, cukrzycy a nawet przedwczesnego porodu i choroby Alzheimera.
-                Bakterie z jamy ustnej z krwiobiegiem dostają się do innych organów. Mogą spowodować zapalenie
-                wsierdzia, uszkodzenie zastawek, a także, jak wskazują najnowsze badania, przyczyniać się do rozwoju
-                miażdżycy i choroby niedokrwiennej serca i mózgu. Stąd też przed poważnymi zabiegami operacyjnymi
-                konieczne jest wyleczenie wszystkich stanów zapalnych w jamie ustnej. Badania wykazały że u osób z
-                chorobami przyzębia dużo częściej występowały nowotwory jamy ustnej, trzustki i płuc niż u osób ze
-                zdrową jamą ustną. Ponadto wykazano wyraźną zależność między zapaleniem przyzębia a rakiem języka.
-                Ciężarna z zaniedbanymi zębami ma prawie dwa razy większe ryzyko przedwczesnego porodu oraz urodzenia
-                dziecka o niskiej masie. Osoby cierpiące na choroby przyzębia nawet o 70 % mają większe ryzyko
-                zachorowania na chorobę Alzheimera.</p>
-            </div>
-            <div class="article">
-              <h3 class="article__inner--header">2. Ułatwia nawiązywanie relacji</h3>
-              <p class="article__paragraph">Uśmiech i promienny wygląd to najlepszy początek każdej rozmowy. Badania
-                American Academy of Cosmetic Dentistry udowadniają, że intuicyjnie zdajemy sobie sprawę z tego, że
-                szczery uśmiech jest podstawą budowania relacji z ludźmi. Aż 99.7% ankietowanych uznało, że jest to
-                element niezbędny do nawiązania i utrzymania pozytywnego kontaktu. Uśmiech jest szczególnie ważny, kiedy
-                zależy nam na zrobieniu dobrego pierwszego wrażenia. Czy jesteś w stanie wyobrazić sobie randkę lub
-                rozmowę kwalifikacyjną bez ani jednego uśmiechu? Takie spotkanie nie zakończyłoby się z pewnością
-                sukcesem. Stare japońskie przysłowie głosi: „Człowiek, który się uśmiecha, podwaja swoje możliwości”.
-              </p>
-            </div>
-            <div class="article">
-              <h3 class="article__inner--header">3. Zaraża pozytywną energią</h3>
-              <p class="article__paragraph">Stwierdzenie, że uśmiech jest zaraźliwy jest jak najbardziej słuszne, Widząc
-                szczerze uśmiechniętą osobę trudno jest powstrzymać się od wzajemnego uśmiechu. Mechanizm ten zbliża
-                rozmówców do siebie, a także pozytywnie wpływa na ich nastrój.
-              </p>
-            </div>
-            <div class="article">
-              <h3 class="article__inner--header">4. Poprawia samopoczucie</h3>
-              <p class="article__paragraph">Uśmiechem wyrażamy to, że czujemy się dobrze i jesteśmy szczęśliwi. Ale
-                również wyraz twarzy, jakim jest uśmiech, oddziałuje pozytywnie na nasz nastrój. Oznacza to, że nawet
-                wymuszony uśmiech sprawia, że czujemy się lepiej.</p>
-            </div>
-          </div>
-        </div>
-        <div class="footer" id="contact">
-          <h3 class="section__header footer__header">
-            Zapraszamy do kontaktu
-          </h3>
-          <div class="footer__container">
-            <div class="contact__details">
-              <h3 class="clinic__name">O Clinic</h3>
-              <p class="contact">ul. Szpitalna 11a</p>
-              <p class="contact">09-200 Sierpc</p>
-              <p class="contact">tel. 880 036 880 (Medycyna estetyczna)</p>
-              <p class="contact">tel. 793 505 048 (Stomatologia)</p>
-              <p class="contact">godz. otwarcia: pn-pt 9:00-18:00</p>
-            </div>
-            <div class="logo__container">
-              <img src="img/O_clinic_logo_ok2.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  <!-- <section class="price__list">
-    <div class="accordion">
-      <div class="accordion__item">
-        <h3 class="accordion__title">Stomatologia zachowawcza</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Badanie jamy ustnej</p>
-            </div>
-            <div class="treatment__price">
-              <p>50zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Badanie jamy ustnej w okresach półrocznych pacjentów O CLINIC</p>
-            </div>
-            <div class="treatment__price">
-              <p>Bezpłatne</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Badanie z wykonaniem planu leczenia</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konsultacja z poradą i wystawieniem recepty</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Znieczulenie</p>
-            </div>
-            <div class="treatment__price">
-              <p>30zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wypełnienie kompozytowe wysokoestetyczne</p>
-            </div>
-            <div class="treatment__price">
-              <p>120-220zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konturing/bonding kompozytem wysokoestetycznym</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-400zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odbudowa zęba kompozytem wysokoestetycznym po leczeniu kanałowym</p>
-            </div>
-            <div class="treatment__price">
-              <p>250-450zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odbudowa zęba kompozytem ze wzmocnieniem przy użyciu wkładu koronowo-korzeniowego z włókna szklanego
-                lub na śrubie</p>
-            </div>
-            <div class="treatment__price">
-              <p>350-550zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wypełnienie zęba mlecznego</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Szynowanie zębów (ligatura druciana lub włókno szklane, cena za 1 ząb)</p>
-            </div>
-            <div class="treatment__price">
-              <p>350-550zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odbudowa zęba kompozytem ze wzmocnieniem przy użyciu wkładu koronowo-korzeniowego z włókna szklanego
-                lub na śrubie</p>
-            </div>
-            <div class="treatment__price">
-              <p>50-100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Lakowanie</p>
-            </div>
-            <div class="treatment__price">
-              <p>80zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Opatrunek leczniczy</p>
-            </div>
-            <div class="treatment__price">
-              <p>80zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Leczenie nadwrażliwości (1 ząb)</p>
-            </div>
-            <div class="treatment__price">
-              <p>50zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Endodoncja (leczenie kanałowe)</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konsultacja endodontyczna z rewizją kliniczną pod mikroskopem i opatrunek</p>
-            </div>
-            <div class="treatment__price">
-              <p>200zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Dewitalizacja "zatrucie" zęba</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ekstyrpacja miazgi</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Opatrunek do kanału</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odbudowa zęba kompozytem wysokoestetycznym po leczeniu kanałowym</p>
-            </div>
-            <div class="treatment__price">
-              <p>250-350zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odbudowa zęba kompozytem wysokoestetycznym z wykorzystaniem włókna szklanego/śruby</p>
-            </div>
-            <div class="treatment__price">
-              <p>350-550zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <h4 class="center">Pierwotne leczenie kanałowe bez mikroskopu (w tym znieczulenie, koferdam, RVG,
-              opracowanie, wypełnienie kanałów gorącą gutaperką)</h4>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb jednokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>400zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb dwukanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb trzykanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>700zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb czterokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>900zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <h4 class="center">Pierwotne leczenie kanałowe mikroskopowe (w tym znieczulenie, koferdam, RVG, opracowanie,
-              wypełnienie kanałów gorącą gutaperką)</h4>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb jednokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb dwukanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>700zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb trzykanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>900zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb czterokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>1100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <h4 class="center">Powtórne leczenie kanałowe (w tym znieczulenie, koferdam, RVG, opracowanie, wypełnienie
-              kanałów gorącą gutaperką)</h4>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb jednokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>600zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb dwukanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>900zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb trzykanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>1200zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ząb czterokanałowy</p>
-            </div>
-            <div class="treatment__price">
-              <p>1500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <h4 class="center">Szczególne przypadki leczenia pod mikroskopem</h4>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Zamknięcie perforacji</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Usunięcie złamanego narzędzia z kanału</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Usunięcie wkładu koronowo - korzeniowego</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-500zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Chirurgia</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Znieczulenie w cenie zabiegu</p>
-            </div>
-            <div class="treatment__price">
-              <p></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ekstrakcja zęba</p>
-            </div>
-            <div class="treatment__price">
-              <p>150-250zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ekstrakcja zęba chirurgiczna</p>
-            </div>
-            <div class="treatment__price">
-              <p>250-300zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Szycie</p>
-            </div>
-            <div class="treatment__price">
-              <p>50zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Ekstrakcja zęba zatrzymanego/ósmego z szyciem rany</p>
-            </div>
-            <div class="treatment__price">
-              <p>400-500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Zamknięcie połączenia ustno-zatokowego</p>
-            </div>
-            <div class="treatment__price">
-              <p>250-350zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Resekcja wierzchołka korzenia</p>
-            </div>
-            <div class="treatment__price">
-              <p>450zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Hemisekcja trzonowca</p>
-            </div>
-            <div class="treatment__price">
-              <p>300zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Podcięcie wędzidełka</p>
-            </div>
-            <div class="treatment__price">
-              <p>150-250zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wycięcie zmian na błonie śluzowej z badaniem hist-pat</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-400zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Nacięcie ropnia z płukaniem</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Odsłonięcie chirurgiczne zęba z naklejeniem zamka</p>
-            </div>
-            <div class="treatment__price">
-              <p>500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wycięcie przerośniętych fałdów włóknistych pod protetykę</p>
-            </div>
-            <div class="treatment__price">
-              <p>200zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Plastyka wyrostka zębodołowego (wyrośla kostne)</p>
-            </div>
-            <div class="treatment__price">
-              <p>300zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Protetyka</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konsultacja protetyczna</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konsultacja protetyczna z wykonaniem planu leczenia (modele diagnostyczne, rentgenodiagnostyka,
-                dokumentacja fotograficzna)</p>
-            </div>
-            <div class="treatment__price">
-              <p>400zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>WAX UP – woskowa symulacja przyszłego uzupełnienia protetycznego (cena za 1 punkt)</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Mock up – symulacja uzupełnienia protetycznego w jamie ustnej pacjenta (na podstawie wcześniejszej
-                symulacji WAX UP)</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Usunięcie wkładu koronowo - korzeniowego</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-500zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Zdjęcie starej korony/mostu</p>
-            </div>
-            <div class="treatment__price">
-              <p>100-200zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Zacementowanie korony wykonanej w innym gabinecie</p>
-            </div>
-            <div class="treatment__price">
-              <p>80zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Ortodoncja</h3>
-        <p class="accordion__answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, soluta. Eaque
-          aliquam modi quia distinctio consectetur? Impedit suscipit, perspiciatis consequuntur iure tempore tempora ut
-          corrupti iste soluta, earum ex asperiores deserunt voluptates aliquid blanditiis, quod voluptatum nobis nam
-          dolore doloribus nesciunt eaque nemo totam beatae! Alias quos, eum laborum suscipit iste, natus reiciendis
-          ratione recusandae fugiat aliquam aliquid veritatis possimus. Officia obcaecati nemo excepturi pariatur
-          provident, atque mollitia, rem, et tenetur nisi unde facere eius. Ducimus necessitatibus exercitationem
-          voluptas eveniet distinctio ex architecto repellendus beatae error tempora. Cum impedit pariatur eaque
-          repellendus tenetur, temporibus cumque repellat distinctio dolor, suscipit laboriosam!</p>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Profilaktyka</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Lakierowanie zębów (fluoryzacja)</p>
-            </div>
-            <div class="treatment__price">
-              <p>100zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Profesjonalne czyszczenie zębów (skaling + piaskowanie + fluoryzacja)</p>
-            </div>
-            <div class="treatment__price">
-              <p>250zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Piaskowanie zębów</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Stomatologia estetyczna</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wybielanie nakładkowe preparatem OPALESCENCE (2 szyny + 2 strzykawki) + wybielająca pasta do zębów
-                Beyond Pearl White</p>
-            </div>
-            <div class="treatment__price">
-              <p>650zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Szyna do wybielania (1 łuk)</p>
-            </div>
-            <div class="treatment__price">
-              <p>350zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Opalescence (preparat wybielający) 1 strzykawka</p>
-            </div>
-            <div class="treatment__price">
-              <p>50zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wybielanie zębów gabinetowe </p>
-            </div>
-            <div class="treatment__price">
-              <p>850zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wybielanie zęba martwego (pierwsza wizyta)</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Wybielanie zęba martwego (kolejne wizyty)</p>
-            </div>
-            <div class="treatment__price">
-              <p>50zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Konturing/bonding kompozytem wysokoestetycznym</p>
-            </div>
-            <div class="treatment__price">
-              <p>300-400zł</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion__item">
-        <h3 class="accordion__title">Rentgenodiagnostyka</h3>
-        <div class="accordion__answer">
-          <div class="row">
-            <div class="treatment__name">
-              <p>Cyfrowe zdjęcie zębowe punktowe</p>
-            </div>
-            <div class="treatment__price">
-              <p>30zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Pantomogram</p>
-            </div>
-            <div class="treatment__price">
-              <p>80zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Cefalometria</p>
-            </div>
-            <div class="treatment__price">
-              <p>80zł</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="treatment__name">
-              <p>Pantomogram + Cefalometria</p>
-            </div>
-            <div class="treatment__price">
-              <p>150zł</p>
-            </div>
-          </div>
-        </div>
+  <div class="slider">
+    <div class="slide">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
       </div>
     </div>
-  </section> -->
+    <div class="slide">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
+      </div>
+    </div>
+    <div class="slide current">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
+      </div>
+    </div>
+    <!-- <div class="slide">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="content">
+        <h1>Nagłówek</h1>
+        <p>
+          Miejsce na tekst
+        </p>
+      </div>
+    </div> -->
+  </div>
+  <div class="buttons">
+    <button id="prev"><ion-icon class="slide__arrow" name="arrow-back-circle-outline"></ion-icon></button>
+    <button id="next"><ion-icon class="slide__arrow" name="arrow-forward-circle-outline"></ion-icon></button>
+  </div>
+
   <!-- ===== MAIN JS ===== -->
   <script src="assets/script/app.js"></script>
 </body>

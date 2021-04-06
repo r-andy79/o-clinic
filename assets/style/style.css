@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&&family=Poppins:wght@300;400;500;600;700&display=swap');
 /* ===== CSS VARIABLES ===== */
 :root {
-  --header-height: 3rem;
+  --header-height: 12rem;
 
 /* ===== COLORS ===== */
 
@@ -78,12 +78,23 @@ img {
 
 header {
   background: var(--white-colour);
-  padding-left: 1.5em;
+  width: 100%;
+}
+
+.header__logo {
+  width: 240px;
+}
+
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -96,7 +107,7 @@ header {
   display: block;
   color: var(--grey-colour);
   padding: 1em 1.5em;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* STYLING SUBMENU */
@@ -112,6 +123,7 @@ header {
   white-space: nowrap;
   padding: 1.5em 0;
   min-width: 16em;
+  z-index: 100;
 
   /* hide submenus */
   opacity: 0;
@@ -287,6 +299,107 @@ header {
     transform: scaleY(1);
   }
 }
+
+/* Slider */
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 80vh;
+  width: 100vw;
+  background: var(--dark-colour);
+  color: var(--white-colour);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  background-color: transparent;
+  color: var(--white-colour);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: color 0.3s;
+}
+
+.buttons button:hover {
+  color:var(--grey-colour);
+}
+
+.slide__arrow {
+  font-size: 32px;
+}
+
+/* Background images */
+
+.slide:first-child {
+  background: url('../../img/dentist-1.jpg') no-repeat center top/cover;
+  /* background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat center top/cover; */
+}
+
+.slide:nth-child(2) {
+  background: url('../../img/167151125_909823589587085_8278761018148462852_n\ \(1\).jpg') no-repeat center bottom/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('../../img/167621804_1745895965582096_5458012178202453046_n.jpg') no-repeat center bottom/cover;
+}
+
+/* .slide:nth-child(4) {
+  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat center bottom/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat center top/cover;
+} 
+
+.slide:nth-child(6)  {
+  background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat  center center/cover;
+} */
 
 /* OLD */
 
@@ -477,6 +590,7 @@ header {
 
 .container {
   width: 100%;
+  padding-top: 12rem;
 }
 
 /* ====== ABOUT ====== */
