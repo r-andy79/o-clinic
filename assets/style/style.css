@@ -619,6 +619,7 @@ section {
   width: 100%;
   background: var(--second-colour);
   padding: 4rem 0;
+  margin-top: 2rem;
 }
 
 .footer__container {
@@ -705,16 +706,23 @@ section {
 
   .footer__container {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
   }
-/* 
+
   .logo__container {
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
 
   .contact__details {
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
-  } */
+  }
+
+  .contact {
+    font-size: 0.875rem;
+  }
 }
 
 /* ====== FEATURES ====== */
