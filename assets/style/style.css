@@ -660,10 +660,21 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .section__header {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
   .about__container {
     width: 100%;
     padding: 1.5rem;
   }
+
+  .about__paragraph {
+    line-height: 1.6;
+    margin: 1.5rem 0;
+  }
+
   .people__container {
     grid-template-columns: 1fr;
     padding: 1.5rem;
@@ -702,12 +713,14 @@ section {
 
   .footer {
     padding: 2rem 0;
+    margin-top: 0;
   }
 
   .footer__container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 2rem;
+    padding: 1.5rem 0;
   }
 
   .logo__container {
