@@ -41,20 +41,26 @@ const prevSlide = () => {
 
 // Button events
 
-nextBtn.addEventListener('click', (e) => { 
-    nextSlide();
-    if(auto) {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-    }
-});
-prevBtn.addEventListener('click', (e) => { 
-    prevSlide();
-    if(auto) {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(nextSlide, intervalTime);
-    }
-});
+if(nextBtn !== null) {
+    nextBtn.addEventListener('click', (e) => { 
+        nextSlide();
+        if(auto) {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    });
+}
+
+if(prevBtn !== null) {
+    prevBtn.addEventListener('click', (e) => { 
+        prevSlide();
+        if(auto) {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    });
+}
+
 
 // Auto slide
 if(auto) {
@@ -71,15 +77,21 @@ const navMenu = document.querySelector('.nav'),
 
 // SHOW
 
-toggleMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
-})
+if(toggleMenu !== null) {
+    toggleMenu.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    })
+}
+
 
 // HIDE
 
-closeMenu.addEventListener('click', () => {
-    navMenu.classList.remove('show');
-})
+if(closeMenu !== null) {
+    closeMenu.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+    })
+}
+
 
 // ACTIVE LINK AND REMOVE MENU
 const navLink = document.querySelectorAll('.nav__link');
