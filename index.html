@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="one-edge-shadow main__header">
     <div class="branding">
       <a href="#" class="branding-logo"><img class="header__logo" src="img/o-clinic-logo.png" alt=""></a>
     </div>
@@ -31,9 +31,10 @@
         </li>
         <li class="has__dropdown"><a href="#" class="menu__link">Medycyna Estetyczna<span class="arrow"></span></a>
           <ul class="submenu">
-            <li><a href="medycyna-estetyczna/dermapen.html" class="menu__link">Dermapen 4<sup>TM</sup></a></li>
-            <li><a href="medycyna-estetyczna/vital-injector.html" class="menu__link">Vital Injector</a></li>
-            <li><a href="medycyna-estetyczna/karboksyterapia.html" class="menu__link">Karboksyterapia</a></li>
+            <li><a href="#" class="menu__link">Osocze bogatopłytkowe PRP</a></li>
+            <li><a href="#" class="menu__link">Mezoterapia</a></li>
+            <li><a href="#" class="menu__link">Wypełniacze</a></li>
+            <li><a href="#" class="menu__link">Toksyna botulinowa</a></li>
             <li><a href="medycyna-estetyczna/nici-liftingujace.html" class="menu__link">Nici liftingujące</a></li>
             <li><a href="medycyna-estetyczna/cennik-medycyna-estetyczna.html" class="menu__link">Cennik</a></li>
           </ul>
@@ -99,10 +100,90 @@
     </div> -->
   </div>
   <div class="buttons">
-    <button id="prev"><ion-icon class="slide__arrow" name="arrow-back-circle-outline"></ion-icon></button>
-    <button id="next"><ion-icon class="slide__arrow" name="arrow-forward-circle-outline"></ion-icon></button>
+    <button id="prev">
+      <ion-icon class="slide__arrow" name="arrow-back-circle-outline"></ion-icon>
+    </button>
+    <button id="next">
+      <ion-icon class="slide__arrow" name="arrow-forward-circle-outline"></ion-icon>
+    </button>
   </div>
-
+  <section class="about" id="about">
+    <div class="about__container">
+      <h2 class="section__header about__header">O nas</h2>
+      <p class="about__paragraph">Jesteśmy gabinetem stomatologicznym oraz medycyny estetycznej zlokalizowanym w
+        Sierpcu. Nasza praktyka to świetnie wyposażone gabinety, umożliwiające wykorzystanie najnowszych metod leczenia,
+        ale
+        także komfortowe wnętrza.</p>
+      <p class="about__paragraph">Nasz zespół to osoby z odpowiednio wysoką wiedzą medyczną, odpowiedzialne,
+        nieustannie się szkolące i podnoszące swoje kwalifikacje zawodowe a przede wszystkim przyjaźni i serdeczni
+        ludzie którzy służą pomocą i swoim doświadczeniem.</p>
+      <p class="about__paragraph">
+        Dążymy do tego aby nasi pacjenci odczuwali komfort, wygodę i czuli się bezpiecznie w naszym gabinecie.
+        Przywracamy naszym pacjentom zdrowe, piękne uśmiechy oraz walczymy z nieuchronnie postępującymi oznakami
+        starzenia. Taka synergia w działaniu daje niejednokrotnie znakomite rezultaty a pacjenci odzyskują pewność
+        siebie i zatracają kompleksy.
+        Bardzo gorąco zachęcamy do zapoznania się z ofertą gabinetu i zapraszamy na konsultacje.
+      </p>
+    </div>
+  </section>
+  <section class="people">
+    <h2 class="section__header people__header">Nasz personel</h2>
+    <div class="people__container">
+      <div class="card">
+        <article class="person">
+          <img src="img/perfil.png" alt="" class="person__photo">
+          <div class="person__details">
+            <header class="person__header">
+              <h4 class="person__name">Grzegorz Obuchowicz</h4>
+              <span class="person__position">Lekarz medycyny estetycznej, lekarz stomatolog</span>
+            </header>
+            <p class="person__description">
+              Współzałożyciel O CLINIC. Absolwent wydziału lekarskiego, lekarsko-dentystycznego, oraz kierunku
+              medycyna estetyczna Warszawskiego Uniwersytetu Medycznego.</p>
+            <p class="person__description">
+              Od wielu lat zajmuje się zabiegami
+              estetycznymi w stomatologii. Wykonuje zabiegi z zakresu stomatologii zachowawczej, chirurgii,
+              protetyki oraz endodoncji. Od lat pasjonat sztuki i piękna i stąd też zainteresowanie medycyną
+              estetyczną.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="card">
+        <article class="person">
+          <img src="img/perfil.png" alt="" class="person__photo">
+          <div class="person__details">
+            <header class="person__header">
+              <h4 class="person__name">Justyna Obuchowicz</h4>
+              <span class="person__position">Lekarz medycyny estetycznej, lekarz stomatolog</span>
+            </header>
+            <p class="person__description">
+              Współzałożycielka O CLINIC. Absolwentka wydziału lekarsko-dentystycznego Warszawskiego Uniwersytetu
+              Medycznego oraz szkoły podyplomowej Master in Orthodontics. Od wielu lat zajmuje się stomatologia
+              zachowawczą i ortodoncją.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="contact">
+    <h2 class="section__header footer__header">
+      Zapraszamy do kontaktu
+    </h2>
+    <div class="footer__container">
+      <div class="contact__details">
+        <h3 class="clinic__name">O Clinic</h3>
+        <p class="contact">ul. Szpitalna 11a</p>
+        <p class="contact">09-200 Sierpc</p>
+        <p class="contact">tel. <strong>880 036 880</strong> (Medycyna estetyczna)</p>
+        <p class="contact">tel. <strong>793 505 048</strong> (Stomatologia)</p>
+        <p class="contact">godz. otwarcia: <strong>pn-pt 9:00-18:00</strong></p>
+      </div>
+      <div class="logo__container">
+        <img src="img/o-clinic-logo.png" alt="">
+      </div>
+    </div>
+  </footer>
   <!-- ===== MAIN JS ===== -->
   <script src="assets/script/app.js"></script>
 </body>

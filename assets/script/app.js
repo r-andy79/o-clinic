@@ -1,7 +1,9 @@
+// SLIDER
+
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
-const auto = false;
+const auto = true;
 const intervalTime = 5000;
 let slideInterval;
 
@@ -39,47 +41,66 @@ const prevSlide = () => {
 
 // Button events
 
-nextBtn.addEventListener('click', (e) => nextSlide());
-prevBtn.addEventListener('click', (e) => prevSlide());
+nextBtn.addEventListener('click', (e) => { 
+    nextSlide();
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+});
+prevBtn.addEventListener('click', (e) => { 
+    prevSlide();
+    if(auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+});
 
-// // ====== MENU SHOW AND HIDE ======
+// Auto slide
+if(auto) {
+    // Run next slide at interval time
+    slideInterval = setInterval(nextSlide, intervalTime);
 
-// const navMenu = document.querySelector('.nav'),
-//       toggleMenu = document.querySelector('.header__toggle'),
-//       closeMenu = document.querySelector('.nav__close')
+}
 
-// // SHOW
+// ====== MENU SHOW AND HIDE ======
 
-// toggleMenu.addEventListener('click', () => {
-//     navMenu.classList.toggle('show');
-// })
+const navMenu = document.querySelector('.nav'),
+      toggleMenu = document.querySelector('.header__toggle'),
+      closeMenu = document.querySelector('.nav__close')
 
-// // HIDE
+// SHOW
 
-// closeMenu.addEventListener('click', () => {
-//     navMenu.classList.remove('show');
-// })
+toggleMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+})
 
-// // ACTIVE LINK AND REMOVE MENU
-// const navLink = document.querySelectorAll('.nav__link');
+// HIDE
 
-// const linkAction = () => {
-//     // Active link
-//     navLink.forEach(link => link.classList.remove('active'));
-//     console.log(this)
-//     this.classList.add('active');
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+})
 
-//     // Remove mobile menu
-//     navMenu.classList.remove('show');
-// }
+// ACTIVE LINK AND REMOVE MENU
+const navLink = document.querySelectorAll('.nav__link');
 
-// navLink.forEach(n => n.addEventListener('click', linkAction));
+const linkAction = () => {
+    // Active link
+    navLink.forEach(link => link.classList.remove('active'));
+    console.log(this)
+    this.classList.add('active');
 
-// const hamburger = document.querySelector('.hamburger');
-// console.log(hamburger);
-// hamburger.addEventListener('click', function() {
-//     this.classList.toggle('close');
-// })
+    // Remove mobile menu
+    navMenu.classList.remove('show');
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+const hamburger = document.querySelector('.hamburger');
+console.log(hamburger);
+hamburger.addEventListener('click', function() {
+    this.classList.toggle('close');
+})
 
 // ACCORDION
 
