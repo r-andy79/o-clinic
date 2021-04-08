@@ -164,6 +164,7 @@ img {
   white-space: nowrap;
   z-index: 1000;
   min-width: 13em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   /* ----- Hide submenus ----- */
 
@@ -894,6 +895,7 @@ section {
   width: 80%;
   background: var(--white-colour);
   padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .article__header {
