@@ -109,6 +109,8 @@ const linkAction = () => {
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 const hamburger = document.querySelector('.hamburger');
+const hamburgerIcon = document.querySelector('.hamburger__icon');
+const closeIcon = document.querySelector('.close__icon');
 console.log(hamburger);
 hamburger.addEventListener('click', function() {
     this.classList.toggle('close');
