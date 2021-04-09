@@ -1163,4 +1163,8 @@ tbody td:nth-child(5) {
   .price__list {
     margin: 0;
   }
+
+  .lower {
+    font-size: 9px;
+  }
 }
