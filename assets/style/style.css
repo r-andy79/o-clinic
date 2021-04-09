@@ -81,6 +81,10 @@ img {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .lower {
   font-size: 12px;
 }
@@ -1054,6 +1058,8 @@ table {
   width: 1000px;
   table-layout: fixed;
   border-collapse: collapse;
+  font-size: 13px;
+  border-left: 1px solid var(--white-colour);
 }
 
 .odd {
@@ -1075,27 +1081,36 @@ tr:hover {
 
 thead th:nth-child(1),
 tbody td:nth-child(1) {
-  width: 50%;
+  width: 30%;
   padding-left: 1rem;
 }
 
 thead th:nth-child(2),
 tbody td:nth-child(2){
-  width: 25%;
+  width: 17.5%;
   line-height: 1.2rem;
+  text-align: right;
 }
 
 thead th:nth-child(3),
 tbody td:nth-child(3){
-  width: 25%;
+  text-align: right;
+  width: 17.5%;
 
 }
 
-tbody td:nth-child(2),
-tbody td:nth-child(3) {
+tbody td:nth-child(4),
+tbody td:nth-child(4) {
+  width: 17.5%;
   text-align: right;
   padding-right: 1rem;
+}
 
+tbody td:nth-child(5),
+tbody td:nth-child(5) {
+  width: 17.5%;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .extra-padding {
