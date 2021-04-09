@@ -11,6 +11,8 @@
 --second-colour: #CBA8B1;
 --third-colour: #832C25;
 --fourth-colour: #CF7E78;
+--fifth-colour: #F7E0DE;
+--sixth-colour: #EBB2AD;
 --aqua-colour: #B8E0DF;
 --dark-colour: #070D1F;
 --grey-colour: #8A817C;
@@ -77,6 +79,10 @@ img {
 
 .center {
   text-align: center;
+}
+
+.lower {
+  font-size: 12px;
 }
 
 .one-edge-shadow {
@@ -845,11 +851,10 @@ section {
 .accordion {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px;
+  padding: 2rem 0;
 }
 
 .accordion__item {
-  /* border-radius: 10px; */
   padding: 1rem;
   margin-bottom: 20px;
   /* background: var(--second-colour); */
@@ -1045,8 +1050,6 @@ section {
 }
 
 
-
-
 table {
   width: 1000px;
   table-layout: fixed;
@@ -1054,39 +1057,64 @@ table {
 }
 
 .odd {
-  background: var(--white-colour);
+  background: var(--sixth-colour);
 }
 
 .even {
-  background: var(--grey-colour);
+  background: var(--fifth-colour);
+}
+
+tr {
+  line-height: 1.75;
 }
 
 tr:hover {
-  background: #aaa;
+  background-color: rgba(0,0,0,0.5);
+  color: var(--white-colour);
 }
 
 thead th:nth-child(1),
 tbody td:nth-child(1) {
   width: 50%;
+  padding-left: 1rem;
 }
 
 thead th:nth-child(2),
 tbody td:nth-child(2){
   width: 25%;
+  line-height: 1.2rem;
 }
 
 thead th:nth-child(3),
 tbody td:nth-child(3){
   width: 25%;
+
 }
 
 tbody td:nth-child(2),
 tbody td:nth-child(3) {
   text-align: right;
+  padding-right: 1rem;
+
+}
+
+.extra-padding {
+  padding-left: 1.5rem;
 }
 
 @media screen and (max-width: 600px) {
   table {
-    width: 360px;
+    width: 300px;
+    font-size: 9px;
+  }
+
+  .therapy {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .accordion {
+    padding: 0;
+    margin: 0;
   }
 }
