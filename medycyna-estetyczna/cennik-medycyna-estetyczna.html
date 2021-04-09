@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
   <meta charset="UTF-8">
@@ -13,580 +13,644 @@
 </head>
 
 <body>
-  <header class="one-edge-shadow main__header">
+  <header class="main__header">
     <div class="branding">
       <a href="#" class="branding-logo"><img class="header__logo" src="../img/o-clinic-logo.png" alt=""></a>
     </div>
     <nav class="navbar">
-      <label for="input-hamburger" class="hamburger"></label>
-      <input type="checkbox" id="input-hamburger" hidden>
+      <label for="input-hamburger" class="hamburger close"><ion-icon class="hamburger__icon" name="menu-outline"></ion-icon><ion-icon class="close__icon" name="close-outline"></ion-icon></label>
+      <input type="checkbox" id="input-hamburger" hidden/>
       <ul class="menu">
-        <li><a href="#" class="menu__link">Home</a></li>
-        <li class="has__dropdown"><a href="#" class="menu__link">Stomatologia
-            <span class="arrow"></span>
-          </a>
+        <li><a href="#" class="menu-link">Home</a></li>
+        <li class="has-dropdown"><a href="#" class="menu-link">Stomatologia</a>
           <ul class="submenu">
-            <li><a href="stomatologia/cennik-stomatologia.html" class="menu__link">Cennik</a></li>
+            <li><a href="#" class="menu-link">Cennik</a></li>
           </ul>
         </li>
-        <li class="has__dropdown"><a href="#" class="menu__link">Medycyna Estetyczna<span class="arrow"></span></a>
+        <li class="has-dropdown"><a href="#" class="menu-link">Medycyna Estetyczna</a>
           <ul class="submenu">
-            <li><a href="#" class="menu__link">Osocze bogatopłytkowe PRP</a></li>
-            <li><a href="#" class="menu__link">Mezoterapia</a></li>
-            <li><a href="#" class="menu__link">Wypełniacze</a></li>
-            <li><a href="#" class="menu__link">Toksyna botulinowa</a></li>
-            <li><a href="medycyna-estetyczna/nici-liftingujace.html" class="menu__link">Nici liftingujące</a></li>
-            <li><a href="medycyna-estetyczna/cennik-medycyna-estetyczna.html" class="menu__link">Cennik</a></li>
+            <li><a href="medycyna-estetyczna/osocze-bogatoplytkowe.html" class="menu-link">Osocze bogatopłytkowe PRP</a></li>
+            <li><a href="#" class="menu-link">Mezoterapia</a></li>
+            <li><a href="#" class="menu-link">Wypełniacze</a></li>
+            <li><a href="#" class="menu-link">Toksyna botulinowa</a></li>
+            <li><a href="#" class="menu-link">Nici liftingujące</a></li>
           </ul>
         </li>
-        <li class="has__dropdown"><a href="#" class="menu__link">Kosmetologia<span class="arrow"></span></a>
+        <li class="has-dropdown"><a href="#" class="menu-link">Kosmetologia</a>
           <ul class="submenu">
-            <li><a href="#" class="menu__link">link-1</a></li>
+            <li><a href="medycyna-estetyczna/dermapen.html" class="menu-link">Dermapen 4</a></li>
+            <li><a href="#" class="menu-link">Peelingi chemiczne</a></li>
+            <li><a href="#" class="menu-link">Zabiegi pielęgnacyjne</a></li>
+            <li><a href="#" class="menu-link">Oczyszczanie manualne</a></li>
           </ul>
         </li>
-        <li><a href="#about" class="menu__link">O nas</a></li>
-        <li><a href="#contact" class="menu__link">Kontakt</a></li>
+        <li><a href="#about" class="menu-link">O nas</a></li>
+        <li><a href="#contact" class="menu-link">Kontakt</a></li>
       </ul>
     </nav>
   </header>
-  <div class="container">
-    <h1>Cennik Medycyna Estetyczna i Kosmetologia</h1>
-    <section class="price__list">
+  <div class="therapy__container">
+    <section class="therapy price__list">
+      <h2 class="section__header">Cennik Stomatologia</h2>
       <div class="accordion">
         <div class="accordion__item">
-          <h3 class="accordion__title">Konsultacja</h3>
+          <h4 class="accordion__title">Stomatologia zachowawcza</h4>
           <div class="accordion__answer">
-            <div class="row">
-              <div class="treatment__name">
-                <p>Konsultacja dr Grzegorz Obuchowicz</p>
-              </div>
-              <div class="treatment__price">
-                <p>100zł*</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Konsultacja kosmetologiczna</p>
-              </div>
-              <div class="treatment__price">
-                <p>50zł*</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>*koszt konsultacji jest odliczany od ceny zabiegu w O Clinic</p>
-              </div>
-              <div class="treatment__price">
-                <p>-</p>
-              </div>
-            </div>
+            <table class="two-row-table">
+              <tbody>
+                <tr class="odd">
+                  <td>Badanie jamy ustnej</td>
+                  <td>50zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Badanie jamy ustnej w okresach półrocznych pacjentów O CLINIC</td>
+                  <td>Bezpłatne</td>
+                </tr>
+                <tr class="odd">
+                  <td>Badanie z wykonaniem planu leczenia</td>
+                  <td>100zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Konsultacja z poradą i wystawieniem recepty</td>
+                  <td>100zł</td>
+                </tr>
+                <tr class="odd">
+                  <td>Znieczulenie</td>
+                  <td>30zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Wypełnienie kompozytowe wysokoestetyczne</td>
+                  <td>120 - 220zł</td>
+                </tr>
+                <tr class="odd">
+                  <td>Konturing/bonding kompozytem wysokoestetycznym</td>
+                  <td>300 - 400zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Odbudowa zęba kompozytem wysokoestetycznym po leczeniu kanałowym</td>
+                  <td>250 - 450zł</td>
+                </tr>
+                <tr class="odd">
+                  <td>Odbudowa zęba kompozytem ze wzmocnieniem przy użyciu wkładu koronowo-korzeniowego z włókna szklanego lub na śrubie</td>
+                  <td>350 - 550zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Wypełnienie zęba mlecznego</td>
+                  <td>100zł</td>
+                </tr>
+                <tr class="odd">
+                  <td>Szynowanie zębów (ligatura druciana lub włókno szklane, cena za 1 ząb)</td>
+                  <td>50 - 100zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Lakowanie</td>
+                  <td>80zł</td>
+                </tr>
+                <tr class="odd">
+                  <td>Opatrunek leczniczy</td>
+                  <td>80zł</td>
+                </tr>
+                <tr class="even">
+                  <td>Leczenie nadwrażliwości (1 ząb)</td>
+                  <td>50zł</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="accordion">
         <div class="accordion__item">
-          <h3 class="accordion__title">BOTOKS</h3>
+          <h4 class="accordion__title">Endodoncja (leczenie kanałowe)</h4>
           <div class="accordion__answer">
-            <div class="row">
-              <h4>REDUKCJA ZMARSZCZEK MIMICZNYCH</h4>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki poziome czoła</p>
-              </div>
-              <div class="treatment__price">
-                <p>500zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki pionowe czoła "lwia zmarszczka"</p>
-              </div>
-              <div class="treatment__price">
-                <p>500zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki okolicy oczu "kurze łapki"</p>
-              </div>
-              <div class="treatment__price">
-                <p>500zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Dwa obszary (z wybranych powyżej)</p>
-              </div>
-              <div class="treatment__price">
-                <p>900zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Trzy obszary (z wybranych powyżej)</p>
-              </div>
-              <div class="treatment__price">
-                <p>1200zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Uniesienie brwi "otwarcie oka"</p>
-              </div>
-              <div class="treatment__price">
-                <p>300zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki nosa "królicze"</p>
-              </div>
-              <div class="treatment__price">
-                <p>300zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki brody "broda brukowana"</p>
-              </div>
-              <div class="treatment__price">
-                <p>500zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki poniżej kącików ust "linie marionetki"</p>
-              </div>
-              <div class="treatment__price">
-                <p>400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Zmarszczki wargi górnej "palacza, kod kreskowy"</p>
-              </div>
-              <div class="treatment__price">
-                <p>400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Szyja (pionowe fałdy mięśnia szerokiego szyi, "szyja indycza")</p>
-              </div>
-              <div class="treatment__price">
-                <p>1200zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <h4 class="center">LECZENIE NADPOTLIWOŚCI</h4>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Pachy (100 jednostek)</p>
-              </div>
-              <div class="treatment__price">
-                <p>1400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Dłonie (100 jednostek)</p>
-              </div>
-              <div class="treatment__price">
-                <p>1400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Dłonie (50 jednostek)</p>
-              </div>
-              <div class="treatment__price">
-                <p>900zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Stopy (100 jednostek)</p>
-              </div>
-              <div class="treatment__price">
-                <p>1400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <h4 class="center">POZOSTAŁE ZABIEGI BOTOKSEM</h4>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Uśmiech dziąsłowy "gummy smile"</p>
-              </div>
-              <div class="treatment__price">
-                <p>400zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>Leczenie bruksizmu (redukcja napięcia mięśni żwaczy)*</p>
-              </div>
-              <div class="treatment__price">
-                <p>1200zł</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>*szyna relaksacyjna przy zabiegu z użyciem toksyny botulinowej</p>
-              </div>
-            </div>
+            <table class="two-row-table">
+              <tr class="odd">
+                <td>Konsultacja endodontyczna z rewizją kliniczną pod mikroskopem i opatrunek</td>
+                <td>200zł</td>
+              </tr>
+              <tr class="even">
+                <td>Dewitalizacja „zatrucie” zęba</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ekstyrpacja miazgi</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="even">
+                <td>Opatrunek do kanału</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Odbudowa zęba kompozytem wysokoestetycznym po leczeniu kanałowym</td>
+                <td>250 - 350zł</td>
+              </tr>
+              <tr class="even">
+                <td>Odbudowa zęba kompozytem wysokoestetycznym z wykorzystaniem włókna szklanego/śruby</td>
+                <td>350 - 550zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2" class="center"><strong>Pierwotne leczenie kanałowe bez mikroskopu</strong><br> (w tym znieczulenie, koferdam, RVG, opracowanie, wypełnienie kanałów gorącą gutaperką)</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb jednokanałowy</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb dwukanałowy</td>
+                <td>500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb trzykanałowy</td>
+                <td>700zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb czterokanałowy</td>
+                <td>900zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2" class="center"><strong>Pierwotne leczenie kanałowe mikroskopowe</strong><br> (w tym mikroskop, znieczulenie, koferdam, RVG, opracowanie, wypełnienie kanałów gorącą gutaperką)</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb jednokanałowy</td>
+                <td>500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb dwukanałowy</td>
+                <td>700zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb trzykanałowy</td>
+                <td>900zł</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb czterokanałowy</td>
+                <td>1100zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2" class="center"><strong>Powtórne leczenie kanałowe</strong><br> (w tym mikroskop, znieczulenie, koferdam, RVG, opracowanie, wypełnienie kanałów gorącą gutaperką)</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb jednokanałowy</td>
+                <td>600zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb dwukanałowy</td>
+                <td>900zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ząb trzykanałowy</td>
+                <td>1200zł</td>
+              </tr>
+              <tr class="even">
+                <td>Ząb czterokanałowy</td>
+                <td>1500zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2" class="center"><strong>Szczególne przypadki leczenia pod mikroskopem</strong></td>
+              </tr>
+              <tr class="even">
+                <td>Zamknięcie perforacji</td>
+                <td>300 - 500zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Usunięcie złamanego narzędzia z kanału</td>
+                <td>300 - 500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Usunięcie wkładu koronowo - korzeniowego</td>
+                <td>300 - 500zł</td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="accordion">
         <div class="accordion__item">
-          <h3 class="accordion__title">MEZOTERAPIA VITAL INJECTOR</h3>
+          <h4 class="accordion__title">Chirurgia</h4>
           <div class="accordion__answer">
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Cyto Care 532, Stretch Care,<br> NCTF HA, RRS HA whitening</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 3 zabiegów*</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>1 obszar (Twarz / Szyja / Dekolt)</p>
-              </div>
-              <div class="treatment__price">
-                <p>600zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1500zł (500zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>2 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>700zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1800zł (600zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>3 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>800zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Neuvia Hydro Deluxe</strong> 2,5ml</p>
-              </div>
-              <div class="treatment__price">
-                <p>800zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Restylane Skinbooster</strong> 1ml</p>
-              </div>
-              <div class="treatment__price">
-                <p>800zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Restylane Skinbooster</strong> 2ml</p>
-              </div>
-              <div class="treatment__price">
-                <p>1500zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>3600zł (1200zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Light Eyes Ultra</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p>600zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1500zł (500zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Nithya</strong> kolagen 5ml</p>
-              </div>
-              <div class="treatment__price">
-                <p>1000zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2400zł (800zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Osocze bogatopłytkowe</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>1 ampułka</p>
-              </div>
-              <div class="treatment__price">
-                <p>700zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1650zł (550zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>2 ampułki</p>
-              </div>
-              <div class="treatment__price">
-                <p>900zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>*istnieje możliwość dokupienia 4 zabiegu w cenie o 100zł niższej niż cena pojedynczego zabiegu</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>*zabiegi optymalnie wykonywane są w odstępach 2-3 tygodniowych (istnieje możliwość indywidualnego
-                  dobrania odstępów pomiędzy zabiegami)</p>
-              </div>
-            </div>
+            <table class="two-row-table">
+              <tr class="odd">
+                <td colspan="2">Znieczulenie w cenie zabiegu</td>
+              </tr>
+              <tr class="even">
+                <td>Ekstrakcja zęba</td>
+                <td>150 - 250zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ekstrakcja zęba chirurgiczna</td>
+                <td>250-300zł</td>
+              </tr>
+              <tr class="even">
+                <td>Szycie</td>
+                <td>50zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Ekstrakcja zęba zatrzymanego/ ósmego z szyciem rany</td>
+                <td>400 - 500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Zamknięcie połączenia ustno-zatokowego</td>
+                <td>250 - 350zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Resekcja wierzchołka korzenia</td>
+                <td>450zł</td>
+              </tr>
+              <tr class="even">
+                <td>Hemisekcja trzonowca</td>
+                <td>300zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Podcięcie wędzidełka</td>
+                <td>150 - 250zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wycięcie zmian na błonie śluzowej z badaniem hist-pat</td>
+                <td>300 - 400zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Nacięcie ropnia z płukaniem</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="even">
+                <td>Odsłonięcie chirurgiczne zęba z naklejeniem zamka</td>
+                <td>500zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Wycięcie przerośniętych fałdów włóknistych pod protetykę</td>
+                <td>200zł</td>
+              </tr>
+              <tr class="even">
+                <td>Plastyka wyrostka zębodołowego (wyrośla kostne)</td>
+                <td>300zł</td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="accordion">
         <div class="accordion__item">
-          <h3 class="accordion__title">DERMAPEN</h3>
+          <h4 class="accordion__title">Protetyka</h4>
           <div class="accordion__answer">
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Mikronakłuwanie Dermapen 4.0 <br>połączone z koktajlem nawilżającym<br> z witaminami, osoczem
-                    bogatopłytkowym lub <br>z peelingem TCA</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 3 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>1 obszar (Twarz / Szyja / Dekolt)</p>
-              </div>
-              <div class="treatment__price">
-                <p>650zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1800zł (600zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>2 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>800zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>3 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>1000zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2400zł (800zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Osocze bogatopłytkowe <br>podane w bezbolesnej mezoterapii <br>igłowej Vital
-                    Injector</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>1 ampułka</p>
-              </div>
-              <div class="treatment__price">
-                <p>700zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>1650zł (550zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>2 ampułki</p>
-              </div>
-              <div class="treatment__price">
-                <p>900zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>Osocze bogatopłytkowe <br>wysokoskoncentrowane otrzymywane <br>przy pomocy zestawu Dr.
-                    PRP</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>1 obszar (Twarz / Szyja / Dekolt)</p>
-              </div>
-              <div class="treatment__price">
-                <p>900zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>2100zł (700zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>2 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>1500zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>3600zł (1200zł za zabieg)</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p>3 obszary</p>
-              </div>
-              <div class="treatment__price">
-                <p>1800zł</p>
-              </div>
-              <div class="treatment__price">
-                <p>4500zł (1500zł za zabieg)</p>
-              </div>
-            </div>
+            <table class="two-row-table">
+              <tr class="odd">
+                <td>Konsultacja protetyczna</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td>Konsultacja protetyczna z wykonaniem planu leczenia (modele diagnostyczne, rentgenodiagnostyka, dokumentacja fotograficzna)</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="odd">
+                <td>WAX UP – woskowa symulacja przyszłego uzupełnienia protetycznego (cena za 1 punkt)</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td>Mock up – symulacja uzupełnienia protetycznego w jamie ustnej pacjenta (na podstawie wcześniejszej symulacji WAX UP)</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Usunięcie wkładu koronowo - korzeniowego</td>
+                <td>300 - 500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Zdjęcie starej korony/mostu</td>
+                <td>100 - 200zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Zacementowanie korony wykonanej w innym gabinecie</td>
+                <td>80zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2" class="center"><strong>Wkłady koronowo-korzeniowe</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Wkład k – k  metalowy</td>
+                <td>450 - 550zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wkład k – k z włókna szklanego</td>
+                <td>450zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Wkład k – k pełnoceramiczny</td>
+                <td>800zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wkład k – k typu Rhein z zatrzaskiem kulkowym</td>
+                <td>600zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2" class="center"><strong>Korony/Mosty* protetyczne</strong><br><span class="lower">*Cena mostu uzależniona jest od liczby punktów. Jako punkt liczona jest jedna korona protetyczna.</span></td>
+              </tr>
+              <tr class="even">
+                <td>Korona kompozytowa tymczasowa – wykonywana w gabinecie</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Most kompozytowy tymczasowy – wykonywany w gabinecie 1 punkt</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td>Most akrylowy tymczasowy – wykonywana w pracowni 1 punkt</td>
+                <td>200 - 400zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Korona pełnoceramiczna E.MAX</td>
+                <td>1500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Korona ceramiczna Cerkon</td>
+                <td>1500zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Korona kompozytowa</td>
+                <td>700 - 900zł</td>
+              </tr>
+              <tr class="even">
+                <td>Most kompozytowy na włóknie szklanym 1pkt.</td>
+                <td>700zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Most Maryland</td>
+                <td></td>
+              </tr>
+              <tr class="even">
+                <td colspan="2" class="center"><strong>Licówki</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Licówka kompozytowa wykonana w gabinecie</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="even">
+                <td>Licówka kompozytowa wykonana w pracowni</td>
+                <td>700 - 900zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Licówka porcelanowa</td>
+                <td>1600zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2" class="center"><strong>Inlay/Onlay</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Inlay/Onlay kompozytowy</td>
+                <td>700 - 900zł</td>
+              </tr>
+              <tr class="even">
+                <td>Inlay/Onlay pełnoceramiczny</td>
+                <td>1300zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2" class="center"><strong>Protezy ruchome</strong></td>
+              </tr>
+              <tr class="even">
+                <td>Proteza akrylowa całkowita górna lub dolna</td>
+                <td>900 - 1000zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Proteza osiadająca częściowa</td>
+                <td>900 - 1000 zł</td>
+              </tr>
+              <tr class="even">
+                <td>Mikroproteza akrylowa (1-3 pkt) </td>
+                <td>650zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Lane wzmocnienie protezy (siatka, łuk)</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="even">
+                <td>Podścielenie protezy</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Proteza szkieletowa</td>
+                <td>1800zł</td>
+              </tr>
+              <tr class="even">
+                <td>Szynoproteza </td>
+                <td>2000zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Proteza overdenture</td>
+                <td>2000zł</td>
+              </tr>
+              <tr class="even">
+                <td>Naprawa protezy (1 pkt)</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Dodatkowy punkt w naprawie</td>
+                <td>50zł</td>
+              </tr>
+              <tr class="even">
+                <td>Szyna relaksacyjna (leczenie bruksizmu)</td>
+                <td>450zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Indywidualne ochraniacze sportowe</td>
+                <td>400 - 800zł</td>
+              </tr>
+              <tr class="even">
+                <td>Prace kombinowane</td>
+                <td>Indywidualna wycena</td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="accordion">
         <div class="accordion__item">
-          <h3 class="accordion__title">
-            KARBOKSYTERAPIA (REOLOGY 2)
-          </h3>
+          <h4 class="accordion__title">Ortodoncja</h4>
           <div class="accordion__answer">
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>TWARZ I GŁOWA</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>RAMIONA</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>GRZBIETY RĄK</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>BRZUCH / UDA /<br> ŁYDKI / POŚLADKI</strong><br> (1 OKOLICA)</p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>CAŁE NOGI + POŚLADKI</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="treatment__name">
-                <p><strong>NOGI + POŚLADKI + BRZUCH</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Cena</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 5 zabiegów</strong></p>
-              </div>
-              <div class="treatment__price">
-                <p><strong>Pakiet 10 zabiegów</strong></p>
-              </div>
-            </div>
+            <table class="two-row-table">
+              <tr class="odd">
+                <td>Konsultacja</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td>Modele diagnostyczne (wyciski)</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Pantomogram + cefalometria</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wymiana ligatur</td>
+                <td>50zł</td>
+              </tr>
+              <tr class="odd">
+                <td colspan="2"><strong>Aparaty ruchome</strong></td>
+              </tr>
+              <tr class="even">
+                <td>Płytka Schwarza</td>
+                <td>650-750zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Trainer</td>
+                <td>400zł</td>
+              </tr>
+              <tr class="even">
+                <td>Twin Block</td>
+                <td>1200zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Płytka przedsionkowa twarda</td>
+                <td>80zł</td>
+              </tr>
+              <tr class="even">
+                <td>Naprawa aparatu ruchomego</td>
+                <td>100 - 200zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Wizyta kontrolna</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2"><strong>Aparaty stałe metalowe</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Aparat stały metalowy 1 łuk</td>
+                <td>1500zł</td>
+              </tr>
+              <tr class="even">
+                <td>Aparat stały samoligaturujący</td>
+                <td>2000zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Wizyta kontrolna</td>
+                <td>150 - 300zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2"><strong>Retencja</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Zdjęcie aparatu stałego 1 łuk</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="even">
+                <td>Retainer stały</td>
+                <td>300zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Płytka retencyjna</td>
+                <td>500zł</td>
+              </tr>
+              <tr class="even">
+                <td colspan="2"><strong>Inne</strong></td>
+              </tr>
+              <tr class="odd">
+                <td>Expander</td>
+                <td>700zł</td>
+              </tr>
+              <tr class="even">
+                <td>Rotator</td>
+                <td>600zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Dystalizator Carriere</td>
+                <td>1200zł</td>
+              </tr>
+            </table>
           </div>
         </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__item">
+          <h4 class="accordion__title">Profilaktyka</h4>
+          <div class="accordion__answer">
+            <table class="two-row-table">
+              <tr class="odd">
+                <td>Lakierowanie zębów (fluoryzacja)</td>
+                <td>100zł</td>
+              </tr>
+              <tr class="even">
+                <td>Profesjonalne czyszczenie zębów (skaling + piaskowanie + fluoryzacja)</td>
+                <td>250zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Piaskowanie zębów</td>
+                <td>150zł</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__item">
+          <h4 class="accordion__title">Stomatologia estetyczna</h4>
+          <div class="accordion__answer">
+            <table class="two-row-table">
+              <tr class="odd">
+                <td>Wybielanie nakładkowe preparatem OPALESCENCE (2 szyny + 2 strzykawki) + wybielająca pasta do zębów Beyond Pearl White</td>
+                <td>650zł</td>
+              </tr>
+              <tr class="even">
+                <td>Szyna do wybielania (1 łuk)</td>
+                <td>350zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Opalescence (preparat wybielający) 1 strzykawka</td>
+                <td>50zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wybielanie zębów gabinetowe </td>
+                <td>850zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Wybielanie zęba martwego (pierwsza wizyta)</td>
+                <td>150zł</td>
+              </tr>
+              <tr class="even">
+                <td>Wybielanie zęba martwego (kolejne wizyty)</td>
+                <td>50zł</td>
+              </tr>
+              <tr class="odd">
+                <td>Konturing/bonding kompozytem wysokoestetycznym</td>
+                <td>300 - 400zł</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion__item">
+          <h4 class="accordion__title">Rentgenodiagnostyka</h4>
+          <div class="accordion__answer">
+            <table class="two-row-table">
+              <tr class="odd">
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="accordion">
+        <div class="accordion__item">
+          <h4 class="accordion__title"></h4>
+          <div class="accordion__answer">
+            <table class="two-row-table">
+
+            </table>
+          </div>
+        </div>
+      </div> -->
+
+    
+      
+      
+        
       </div>
     </section>
   </div>
