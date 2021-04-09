@@ -11,8 +11,8 @@
 --second-colour: #CBA8B1;
 --third-colour: #832C25;
 --fourth-colour: #CF7E78;
---fifth-colour: #F7E0DE;
---sixth-colour: #EBB2AD;
+--fifth-colour: #FBF0EF;
+--sixth-colour: #F7E0DE;
 --aqua-colour: #B8E0DF;
 --dark-colour: #070D1F;
 --grey-colour: #8A817C;
@@ -1102,6 +1102,33 @@ tbody td:nth-child(3) {
   padding-left: 1.5rem;
 }
 
+@media screen and (max-width: 1040px) {
+  table {
+    width: 800px;
+  }
+
+  .therapy {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    width: 540px;
+  }
+
+  .therapy {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .accordion {
+    padding: 1rem 0;
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   table {
     width: 300px;
@@ -1115,6 +1142,10 @@ tbody td:nth-child(3) {
 
   .accordion {
     padding: 0;
+    margin: 0;
+  }
+
+  .price__list {
     margin: 0;
   }
 }
