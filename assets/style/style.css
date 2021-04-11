@@ -126,6 +126,22 @@ img {
   width: 100% !important;
 }
 
+.under__construction {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  padding: 1rem 2rem;
+  background: var(--third-colour);
+  color: var(--white-colour);
+  text-decoration: none;
+  margin-top: 2rem;
+}
+
 /* ===== HEADER ===== */
 
 .main__header {
