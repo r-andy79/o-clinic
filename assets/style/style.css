@@ -505,11 +505,11 @@ img {
 }
 
 .slide:nth-child(8)  {
-  background: url('../../img/slider-1.jpg') no-repeat  center center/cover;
+  background: url('../../img/slider-1.jpg') no-repeat  center center/contain;
 }
 
 .slide:nth-child(9) {
-  background: url('../../img/slider-3.jpg') no-repeat center center/cover;
+  background: url('../../img/slider-3.jpg') no-repeat center center/contain;
 }
 
 
