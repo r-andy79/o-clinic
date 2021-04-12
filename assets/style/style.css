@@ -391,7 +391,7 @@ img {
   overflow: hidden;
   height: 80vh;
   width: 100%;
-  background: var(--dark-colour);
+  background: var(--white-colour);
   color: var(--white-colour);
 }
 
@@ -490,7 +490,7 @@ img {
 }
 
 .slide:nth-child(4) {
-  background: url('../../img/NCTF135HA_FIOLE_HOR_FILLMED_BLC_1118-WEB.png') no-repeat center bottom/cover;
+  background: url('../../img/NCTF135HA_FIOLE_HOR_FILLMED_BLC_1118-WEB.png') no-repeat center center/contain;
 }
 
 /* .slide:nth-child(5) {
