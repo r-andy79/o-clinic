@@ -512,6 +512,10 @@ img {
   background: url('../../img/slider-3.jpg') no-repeat center center/contain;
 }
 
+.slide:nth-child(10) {
+  background: url('../../img/gabinet_2.jpg') no-repeat center center/contain;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 
