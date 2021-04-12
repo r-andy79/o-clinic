@@ -473,7 +473,7 @@ img {
 /* Background images */
 
 .slide:first-child {
-  background: url('../../img/1.png') no-repeat center top/cover;
+  background: url('../../img/1.png') no-repeat center center/contain;
   /* background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat center top/cover; */
 }
 
