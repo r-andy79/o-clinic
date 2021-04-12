@@ -504,6 +504,14 @@ img {
   background: url('../../img/nithya.png') no-repeat  center center/cover;
 }
 
+.slide:nth-child(8)  {
+  background: url('../../img/slider-1.jpg') no-repeat  center center/cover;
+}
+
+.slide:nth-child(9) {
+  background: url('../../img/slider-3.jpg') no-repeat center center/cover;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 
