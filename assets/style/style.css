@@ -142,6 +142,20 @@ img {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .scroll__up {
+    right: 2rem;
+    bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--white-colour);
+  }
+
+  .scroll__up .arrow__up {
+    font-size: 16px;
+  }
+}
+
 /* ===== HEADER ===== */
 
 .main__header {
@@ -459,7 +473,7 @@ img {
 /* Background images */
 
 .slide:first-child {
-  background: url('../../img/dentist-1.jpg') no-repeat center top/cover;
+  background: url('../../img/1.png') no-repeat center top/cover;
   /* background: url('https://source.unsplash.com/RyRpq9SUwAU/1600x900') no-repeat center top/cover; */
 }
 
@@ -475,11 +489,11 @@ img {
   background: url('../../img/rsz_1167151125_909823589587085_8278761018148462852_n_1.jpg') no-repeat center bottom/cover;
 }
 
-/* .slide:nth-child(4) {
-  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat center bottom/cover;
+.slide:nth-child(4) {
+  background: url('../../img/NCTF135HA_FIOLE_HOR_FILLMED_BLC_1118-WEB.png') no-repeat center bottom/cover;
 }
 
-.slide:nth-child(5) {
+/* .slide:nth-child(5) {
   background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat center top/cover;
 } 
 
@@ -687,13 +701,18 @@ section {
 .footer__container {
   margin: 0 auto;
   width: 70%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 3rem 0;
 }
 
 .footer__header {
   text-align: center;
+}
+
+.footer__logo {
+  margin-bottom: 4rem;
 }
 
 .clinic__name {
@@ -968,6 +987,7 @@ section {
 .therapy__icon {
   font-size: 32px;
   margin-right: 1rem;
+  color: var(--third-colour);
 }
 
 .list__item--container {
@@ -1029,6 +1049,7 @@ section {
 .indication__icon {
   font-size: 1.5rem;
   margin-right: 1rem;
+  color: var(--third-colour);
 }
 .highlight {
   color:var(--third-colour);
@@ -1062,6 +1083,21 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+
+  .therapy__link {
+    text-decoration: none;
+    color: var(--grey-colour);
+    font-size: 1rem;
+  }
+
+  .article__header {
+    font-size: 2rem;
+  }
+
+  .indications__container {
+    grid-template-columns: 1fr;
+  }
+
   .therapy__inner--container {
     grid-template-columns: none;
     grid-template-rows: repeat(2, 1fr);
