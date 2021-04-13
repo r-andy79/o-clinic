@@ -89,6 +89,24 @@ img {
   font-size: 12px;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.treatment {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .one-edge-shadow {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
@@ -474,7 +492,7 @@ img {
 }
 
 .slide:nth-child(2) {
-  background: url('../../img/poczekalnia.jpg') no-repeat center center/contain;
+  background: url('../../img/poczekalnia_1.png') no-repeat center center/cover;
 }
 
 .slide:nth-child(3) {
@@ -482,27 +500,31 @@ img {
 }
 
 .slide:nth-child(4) {
-  background: url('../../img/fillmed_2.png') no-repeat center center/contain;
+  background: url('../../img/gabinet_3.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(5) {
-  background: url('../../img/braces.jpg') no-repeat center center/contain;
+  background: url('../../img/fillmed_10.png') no-repeat center center/contain;
 } 
 
 .slide:nth-child(6)  {
-  background: url('../../img/gabinet.jpg') no-repeat  center center/contain;
+  background: url('../../img/gabinet_4.jpg') no-repeat  center center/contain;
 }
 
 .slide:nth-child(7)  {
   background: url('../../img/kosmetologia_2.png') no-repeat  center center/contain;
 }
 
-.slide:nth-child(9) {
+.slide:nth-child(8) {
   background: url('../../img/slider-3.jpg') no-repeat center center/contain;
 }
 
-.slide:nth-child(10) {
+.slide:nth-child(9) {
   background: url('../../img/gabinet_2.jpg') no-repeat center center/contain;
+}
+
+.slide:nth-child(10) {
+  background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/cover;
 }
 
 
@@ -524,7 +546,7 @@ img {
 }
 
 .slide:nth-child(2) {
-  background: url('../../img/poczekalnia.jpg') no-repeat center center/cover;
+  background: url('../../img/poczekalnia_1.png') no-repeat center center/cover;
 }
 
 .slide:nth-child(3) {
@@ -532,15 +554,15 @@ img {
 }
 
 .slide:nth-child(4) {
-  background: url('../../img/fillmed_2.png') no-repeat center center/contain;
+  background: url('../../img/gabinet_3.jpg') no-repeat center center/cover;
 }
 
 .slide:nth-child(5) {
-  background: url('../../img/braces.jpg') no-repeat center center/cover;
+  background: url('../../img/fillmed_10.png') no-repeat center top/contain;
 } 
 
 .slide:nth-child(6)  {
-  background: url('../../img/gabinet.jpg') no-repeat  center center/cover;
+  background: url('../../img/gabinet_4.jpg') no-repeat  50px -250px/cover;
 }
 
 .slide:nth-child(7)  {
@@ -549,6 +571,10 @@ img {
 
 .slide:nth-child(8) {
   background: url('../../img/slider-3.jpg') no-repeat center center/contain;
+}
+
+.slide:nth-child(9) {
+  background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/cover;
 }
 
 
