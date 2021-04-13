@@ -987,6 +987,13 @@ section {
 .list__item--container {
   display: flex;
   align-items: center;
+  padding-left: 1rem;
+  border-top: 2px solid var(--third-colour);
+  border-bottom: 2px solid var(--third-colour);
+}
+
+.list__item--header {
+  padding: 1rem 0;
 }
 
 .therapy__content {
@@ -1058,6 +1065,7 @@ section {
 .indications,
 .contraindications {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 1rem 0;
 }
@@ -1096,6 +1104,17 @@ section {
 
 .paragraph__lead {
   margin: 1rem 0;
+}
+
+.therapy__icon--inner {
+  font-size: 32px;
+  margin: 0;
+  color: var(--third-colour);
+}
+
+.icons__wrapper {
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {
