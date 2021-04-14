@@ -1,6 +1,6 @@
 /* ===== GOOGLE FONTS ===== */
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&&family=Poppins:wght@300;400;500;600;700&family=Clicker+Script&display=swap');
 /* ===== CSS VARIABLES ===== */
 :root {
   --header-height: 0;
@@ -20,6 +20,7 @@
 
 /* ===== TYPOGRAPHY ===== */
   --body-font: 'Noto Serif', serif;
+  --hand-written: 'Clicker Script', serif;
   --headers-font: 'Noto Serif', serif; 
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -429,6 +430,11 @@ img {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+}
+
+.slide__header {
+  font-family: var(--hand-written);
+  font-size: 3rem;
 }
 
 .slide.current {
@@ -894,7 +900,7 @@ section {
 
   .people__container,
   .people__container--smaller {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 1.5rem;
     width: 100%;
   }
@@ -953,6 +959,15 @@ section {
 
   .contact {
     font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .people__container,
+  .people__container--smaller {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    width: 100%;
   }
 }
 
