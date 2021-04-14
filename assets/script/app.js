@@ -131,3 +131,24 @@ accordionTitles.forEach((accordionTitle) => {
         }
     })
 })
+
+// READ MORE / LESS
+
+const readBtns = document.querySelectorAll('.read-more-less-btn');
+console.log(readBtns);
+const additionalText = document.querySelector('.additional__paragraph');
+
+function showHideText() {
+    const siblingText = this.previousElementSibling;
+        if(siblingText.style.display === 'none' || siblingText.style.display === '') {
+            siblingText.style.display = 'block';
+            this.textContent = 'Czytaj mniej';
+        } else {
+            siblingText.style.display = 'none';
+            this.textContent = 'Czytaj więcej';
+        }
+    }
+
+if(readBtns !== null) {
+    readBtns.forEach(el => el.addEventListener('click', showHideText))
+}

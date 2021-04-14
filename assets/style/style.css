@@ -117,6 +117,10 @@ img {
   position: relative;
 }
 
+.block {
+  display: block;
+}
+
 .scroll__up {
   position: fixed;
   right: 3rem;
@@ -524,7 +528,7 @@ img {
 }
 
 .slide:nth-child(10) {
-  background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/cover;
+  background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/contain;
 }
 
 
@@ -566,7 +570,7 @@ img {
 }
 
 .slide:nth-child(7)  {
-  background: url('../../img/kosmetologia_2.png') no-repeat  center center/cover;
+  background: url('../../img/kosmetologia_2.png') no-repeat  center center/contain;
 }
 
 .slide:nth-child(8) {
@@ -726,9 +730,18 @@ section {
 .people__container {
   width: 80%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 3rem 3rem 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.people__container--smaller {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 3rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 }
 
@@ -738,19 +751,63 @@ section {
   border-radius: 16px;
 }
 
+.mini__card {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 16px;
+}
+
+.read-more-less-btn {
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--second-colour);
+  color: var(--white-colour);
+  padding: .75rem 1rem;
+  font-family: var(--body-font);
+  width: 150px;
+  margin-top: 20px;
+}
+
+.additional__paragraph {
+  display: none;
+}
+
 .person {
   display: flex;
   align-items: flex-start;
 }
 
+.person__small {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .person__photo {
+  width: 110px;
   margin-right: 2rem;
   border-radius: 50%;
+}
+
+.person__photo--small {
+  width: 110px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.person__details--small {
+  text-align: center;
 }
 
 .person__name {
   margin: 0;
   color: var(--third-colour);
+}
+
+.person__name--small {
+  color: var(--third-colour);
+  margin: 1rem 0;
 }
 
 .person__position {
@@ -759,7 +816,8 @@ section {
   font-style: italic;
 }
 
-.person__description {
+.person__description,
+.additional__paragraph {
   font-size: 13px;
   padding: .5rem 0;
   line-height: 1.4;
@@ -834,7 +892,8 @@ section {
     margin: 1.5rem 0;
   }
 
-  .people__container {
+  .people__container,
+  .people__container--smaller {
     grid-template-columns: 1fr;
     padding: 1.5rem;
     width: 100%;
