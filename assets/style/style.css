@@ -1160,7 +1160,7 @@ section {
 .effects__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   grid-gap: 2rem;
 }
 
@@ -1200,6 +1200,22 @@ section {
 .item-8 {
   background: url('../../img/medycyna-estetyczna/reology-2/reology-effects-8.png') no-repeat center center/cover;
 } 
+
+.item-9 {
+  background: url('../../img/medycyna-estetyczna/dermapen/efects_1.png') no-repeat center center/cover;
+}
+
+.item-10 {
+  background: url('../../img/medycyna-estetyczna/dermapen/effects_2.png') no-repeat center center/cover;
+}
+
+.item-11 {
+  background: url('../../img/medycyna-estetyczna/dermapen/effects-3.png') no-repeat center center/cover;
+}
+
+.item-12 {
+  background: url('../../img/medycyna-estetyczna/dermapen/effects-4.png') no-repeat center center/cover;
+}
 
 .list__item--container {
   margin: 2rem 0;
