@@ -437,8 +437,8 @@ img {
 }
 
 .slide__header {
-  font-family: var(--hand-written);
-  font-size: 3rem;
+  /* font-family: var(--hand-written); */
+  font-size: 2rem;
 }
 
 .slide.current {
