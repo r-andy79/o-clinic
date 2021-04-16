@@ -436,9 +436,17 @@ img {
   transition: opacity 0.4s ease-in-out;
 }
 
+.slide__image {
+  width: 200px;
+}
+
 .slide__header {
-  /* font-family: var(--hand-written); */
   font-size: 1.5rem;
+}
+
+.slide__paragraph {
+  font-family: var(--hand-written);
+  font-size: 32px;
 }
 
 .slide.current {
@@ -522,11 +530,11 @@ img {
 } 
 
 .slide:nth-child(6)  {
-  background: url('../../img/gabinet_4.jpg') no-repeat  center center/contain;
+  background: url('../../img/gabinet_4.jpg') no-repeat center center/contain;
 }
 
 .slide:nth-child(7)  {
-  background: url('../../img/kosmetologia_2.png') no-repeat  center center/contain;
+  background: url('../../img/kosmetologia_2.png') no-repeat center center/contain;
 }
 
 .slide:nth-child(8) {
@@ -579,7 +587,7 @@ img {
 } 
 
 .slide:nth-child(6)  {
-  background: url('../../img/gabinet_4.jpg') no-repeat  50px -250px/cover;
+  background: url('../../img/gabinet_4.jpg') no-repeat  center center/cover;
 }
 
 .slide:nth-child(7)  {
@@ -1478,7 +1486,7 @@ tbody td:nth-child(5) {
   .article__inner--container {
     padding-bottom: 2rem;
   }
-  
+
   table {
     width: 300px;
     font-size: 9px;
