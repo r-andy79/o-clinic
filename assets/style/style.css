@@ -438,7 +438,7 @@ img {
 
 .slide__header {
   /* font-family: var(--hand-written); */
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .slide.current {
@@ -563,7 +563,7 @@ img {
 }
 
 .slide:nth-child(2) {
-  background: url('../../img/poczekalnia_1.png') no-repeat center center/cover;
+  background: url('../../img/poczekalnia_1.png') no-repeat center center/contain;
 }
 
 .slide:nth-child(3) {
@@ -575,7 +575,7 @@ img {
 }
 
 .slide:nth-child(5) {
-  background: url('../../img/fillmed_10.png') no-repeat center top/contain;
+  background: url('../../img/fillmed_10.png') no-repeat center center/contain;
 } 
 
 .slide:nth-child(6)  {
@@ -595,7 +595,7 @@ img {
 }
 
 .slide:nth-child(10) {
-  background: url('../../img/rsz_dji_0984.jpg') no-repeat center center/cover;
+  background: url('../../img/rsz_dji_0984.jpg') no-repeat center center/contain;
 }
 
 
@@ -1118,6 +1118,10 @@ section {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.article__inner--container {
+  padding-bottom: 4rem;
+}
+
 .article__header {
   font-family: 'Noto serif', serif;
   color: var(--third-colour);
@@ -1470,6 +1474,11 @@ tbody td:nth-child(5) {
 }
 
 @media screen and (max-width: 600px) {
+
+  .article__inner--container {
+    padding-bottom: 2rem;
+  }
+  
   table {
     width: 300px;
     font-size: 9px;
