@@ -541,6 +541,9 @@ img {
   background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/contain;
 }
 
+.slide:nth-child(11) {
+  background: url('../../img/rsz_dji_0984.jpg') no-repeat center center/contain;
+}
 
   .slide .content {
     bottom: -300px;
@@ -589,6 +592,10 @@ img {
 
 .slide:nth-child(9) {
   background: url('../../img/aparat_ortodontyczny.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(10) {
+  background: url('../../img/rsz_dji_0984.jpg') no-repeat center center/cover;
 }
 
 
@@ -828,9 +835,9 @@ section {
 
 .person__description,
 .additional__paragraph {
-  font-size: 13px;
+  font-size: 12px;
   padding: .5rem 0;
-  line-height: 1.4;
+  line-height: 1.3;
   font-family: 'Noto serif', serif;
 }
 
@@ -1116,7 +1123,8 @@ section {
   color: var(--third-colour);
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 1rem;
+  padding: 2rem 0;
+  /* margin-bottom: 1rem; */
 }
 
 .sub__header {
@@ -1131,6 +1139,15 @@ section {
 .list__item--container {
   display: flex;
   align-items: center;
+  padding-left: 1rem;
+  border-top: 2px solid var(--third-colour);
+  border-bottom: 2px solid var(--third-colour);
+}
+
+.therapy__item--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-left: 1rem;
   border-top: 2px solid var(--third-colour);
   border-bottom: 2px solid var(--third-colour);
