@@ -204,6 +204,26 @@ img {
   width: 300px;
 }
 
+.social__container {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--third-colour);
+  border-radius: 4px;
+  background: var(--third-colour);
+  position: fixed;
+  right: -2px;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20000;
+}
+
+.social__icon {
+  color: var(--white-colour);
+  font-size: 24px;
+}
+
 .branding {
   display: flex;
   justify-content: center;
