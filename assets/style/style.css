@@ -782,6 +782,11 @@ section {
   border-radius: 16px;
 }
 
+.description__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .read-more-less-btn {
   border: none;
   border-radius: 6px;
@@ -792,6 +797,7 @@ section {
   font-family: var(--body-font);
   width: 150px;
   margin-top: 20px;
+  align-self: center;
 }
 
 .additional__paragraph {
@@ -1126,8 +1132,20 @@ section {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.therapy__price {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--white-colour);
+  background: var(--second-colour);
+  align-self: center;
+  /* width: 200px; */
+}
+
 .article__inner--container {
   padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .article__header {
