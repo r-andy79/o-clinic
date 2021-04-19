@@ -82,6 +82,11 @@ img {
   text-align: center;
 }
 
+.center-item {
+  margin: 0 auto;
+  display: block;
+}
+
 .left {
   text-align: left;
 }
