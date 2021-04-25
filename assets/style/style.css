@@ -539,6 +539,14 @@ img {
     height: 60vh;
   }
 
+  .slide .content h1 {
+    font-size: 18px;
+  }
+
+  .slide .content .slide__paragraph {
+    font-size: 14px;
+  }
+
   /* Background images */
 
 .slide:first-child {
