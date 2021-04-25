@@ -16,7 +16,9 @@
 <body>
   <header class="main__header">
     <div class="social__container">
-      <a href="https://www.facebook.com/STOMATOLOGIA-OBUCHOWICZ-101281494917288" target="_blank"><ion-icon class="social__icon" name="logo-facebook"></ion-icon></a>
+      <a href="https://www.facebook.com/STOMATOLOGIA-OBUCHOWICZ-101281494917288" target="_blank">
+        <ion-icon class="social__icon" name="logo-facebook"></ion-icon>
+      </a>
     </div>
     <div class="branding">
       <a href="#" class="branding-logo"><img class="header__logo" src="img/o-clinic-logo.png" alt=""></a>
@@ -29,6 +31,7 @@
       <input type="checkbox" id="input-hamburger" hidden />
       <ul class="menu">
         <li><a href="index.html" class="menu-link">Home</a></li>
+        <li><a href="#about" class="menu-link">O nas</a></li>
         <li class="has-dropdown"><a href="#" class="menu-link">Stomatologia</a>
           <ul class="submenu">
             <li><a href="stomatologia/stomatologia.html#profilaktyka" class="menu-link">Profilaktyka</a></li>
@@ -61,9 +64,10 @@
             <li><a href="under-construction.html" class="menu-link">Peelingi chemiczne</a></li>
             <li><a href="under-construction.html" class="menu-link">Zabiegi pielęgnacyjne</a></li>
             <li><a href="under-construction.html" class="menu-link">Oczyszczanie manualne</a></li>
+            <li><a href="under-construction.html" class="menu-link">Pakiety zabiegowe</a></li>
+            <li><a href="under-construction.html" class="menu-link">Karnety zabiegowe</a></li>
           </ul>
         </li>
-        <li><a href="#about" class="menu-link">O nas</a></li>
         <li><a href="#contact" class="menu-link">Kontakt</a></li>
         <li><a href="informacja-covid.html" class="menu-link">Informacja COVID-19</a></li>
       </ul>
@@ -73,7 +77,7 @@
     <div class="slider">
       <div class="slide">
         <div class="content">
-          <h1 class="slide__header"></h1>
+          <h1 class="slide__header">Stomatologia w <img class="slide__image" src="img/logo-small.png" alt=""></h1>
           <p class="slide__paragraph">Dbamy o Twój zdrowy i piękny uśmiech</p>
         </div>
       </div>
@@ -181,17 +185,19 @@
               <h4 class="person__name">Grzegorz Obuchowicz</h4>
               <span class="person__position">Lekarz medycyny estetycznej, lekarz stomatolog</span>
             </header>
+            <div class="description__container">
             <p class="person__description">
               Współzałożyciel O CLINIC. Absolwent wydziału lekarskiego, lekarsko-dentystycznego, oraz kierunku
               medycyna estetyczna Warszawskiego Uniwersytetu Medycznego.</p>
-            <p class="person__description">
+            <p class="additional__paragraph">
               Od wielu lat zajmuje się zabiegami
               estetycznymi w stomatologii. Wykonuje zabiegi z zakresu stomatologii zachowawczej, chirurgii,
-              protetyki oraz endodoncji.</p>
-            <p class="person__description">
+              protetyki oraz endodoncji.<br>
               Już od szkolnych lat interesuję się sztuką malarstwa i rzeźbą i to nie tylko w
               teorii. Stąd też wybór innej specjalności lekarskiej jaką jest medycyna estetyczna.
             </p>
+            <button class="read-more-less-btn">Czytaj więcej</button>
+          </div>
           </div>
         </article>
       </div>
@@ -203,10 +209,25 @@
               <h4 class="person__name">Justyna Obuchowicz</h4>
               <span class="person__position">Lekarz stomatolog</span>
             </header>
-            <p class="person__description">
-              Współzałożycielka O CLINIC. Absolwentka wydziału lekarsko-dentystycznego Warszawskiego Uniwersytetu
-              Medycznego oraz szkoły podyplomowej Master in Orthodontics. Od wielu lat zajmuje się stomatologia
-              zachowawczą i ortodoncją.</p>
+            <div class="description__container">
+              <p class="person__description">
+                Współzałożycielka O CLINIC. Absolwentka wydziału lekarsko-dentystycznego Warszawskiego Uniwersytetu
+                Medycznego oraz szkoły podyplomowej Master in Orthodontics.</p>
+              <p class="additional__paragraph">
+                Przez kilka lat pracowała jako lekarz stomatolog dzieci i dorosłych. Od 2017 zajmuje się ortodoncją. Od
+                2017 roku zajmuje się ortodoncją.<br>
+                Priorytetem jest holistyczne podejście do pacjenta, polegające na patrzeniu na organizm pacjenta
+                całościowo.<br>
+                Potrzeba stałego poszerzania wiedzy motywuje dr Justynę do regularnego uczestnictwa w szkoleniach.
+                Biorąc udział w kursach prowadzonych przez różnych wykładowców, zapoznaje się z nowoczesnymi
+                standardami i metodami prowadzenia terapii ortodontycznych zarówno dzieci, jak i dorosłych.<br>
+                Jej ambicją jest szerzenie wiedzy i zwiększanie świadomości stomatologiczno – ortodontycznej wśród
+                swoich pacjentów.<br>
+                Dużą wagę przykłada do stworzenia miłej i serdecznej atmosfery podczas wizyty w gabinecie.<br>
+                Prywatnie mama dwóch córek. Wolny czas lubi spędzać na łonie natury, kocha podróże.
+              </p>
+              <button class="read-more-less-btn">Czytaj więcej</button>
+            </div>
           </div>
         </article>
       </div>
@@ -219,17 +240,18 @@
               <span class="person__position">Lekarz stomatolog, specjalista endodoncji</span>
             </header>
             <div class="description__container">
-            <p class="person__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus animi officiis beatae
-              maxime? Beatae quo sapiente inventore? Nam, architecto!
-            </p>
-            <p class="additional__paragraph">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, maiores ea facere delectus ipsa
-              autem, consequuntur modi amet velit laudantium nihil? Voluptatum tenetur tempore perspiciatis sed aliquid,
-              esse fugiat? Quibusdam veniam eos tempore sint atque ratione beatae similique laboriosam quaerat?
-            </p>
-            <button class="read-more-less-btn">Czytaj więcej</button>
-          </div>
+              <p class="person__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptatibus animi officiis beatae
+                maxime? Beatae quo sapiente inventore? Nam, architecto!
+              </p>
+              <p class="additional__paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, maiores ea facere delectus ipsa
+                autem, consequuntur modi amet velit laudantium nihil? Voluptatum tenetur tempore perspiciatis sed
+                aliquid,
+                esse fugiat? Quibusdam veniam eos tempore sint atque ratione beatae similique laboriosam quaerat?
+              </p>
+              <button class="read-more-less-btn">Czytaj więcej</button>
+            </div>
           </div>
         </article>
       </div>

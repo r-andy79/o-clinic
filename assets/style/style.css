@@ -490,6 +490,13 @@ img {
 
 .slide .content h1 {
   margin-bottom: 10px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.slide .content img {
+  height: 100%;
+  vertical-align: bottom;
 }
 
 .slide.current .content {
