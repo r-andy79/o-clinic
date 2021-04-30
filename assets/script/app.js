@@ -142,10 +142,10 @@ function showHideText() {
     const siblingText = this.previousElementSibling;
         if(siblingText.style.display === 'none' || siblingText.style.display === '') {
             siblingText.style.display = 'block';
-            this.textContent = 'Czytaj mniej';
+            this.textContent = 'Zwiń';
         } else {
             siblingText.style.display = 'none';
-            this.textContent = 'Czytaj więcej';
+            this.textContent = 'Rozwiń';
         }
     }
 
