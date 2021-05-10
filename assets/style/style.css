@@ -838,6 +838,7 @@ section {
   width: 150px;
   margin-top: 20px;
   align-self: center;
+  cursor: pointer;
 }
 
 .additional__paragraph {
