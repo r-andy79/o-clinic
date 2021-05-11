@@ -471,7 +471,7 @@ img {
 
 .slide__paragraph {
   /* font-family: var(--hand-written); */
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .slide.current {
