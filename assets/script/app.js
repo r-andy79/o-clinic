@@ -3,6 +3,8 @@
 const slides = document.querySelectorAll('.slide');
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
+const popUpBtn = document.querySelector('.pop-up__button');
+const popUpEl = document.querySelector('.pop-up');
 const auto = true;
 const intervalTime = 5000;
 let slideInterval;
@@ -59,6 +61,12 @@ if(prevBtn !== null) {
             slideInterval = setInterval(nextSlide, intervalTime);
         }
     });
+}
+
+if(popUpBtn !== null) {
+    popUpBtn.addEventListener('click', () => {
+        popUpEl.classList.remove('pop-up__active');
+    })
 }
 
 
